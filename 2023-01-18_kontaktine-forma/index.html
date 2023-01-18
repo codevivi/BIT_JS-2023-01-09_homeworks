@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact form</title>
+    </head>
+
+    <body class="page">
+        <h1>HTML, CSS kontaktinė forma pagal maketą. <small>2023-01-18</small></h1>
+        <div class="contact-wrapper">
+            <div class="contact-aside">
+                <h2 class="contact-aside-title contact-title">Let's get in touch</h2>
+                <p class="contact-aside-top-text">We're open for any suggestion
+                    or just to have a chat</p>
+                <ul class="contact-aside-list">
+                    <li class="contact-aside-item">
+                        <i class="fa fa-map-marker contact-aside-icon"
+                            aria-hidden="true"></i>
+                        <p class="contact-aside-item-text">Address: 198 West
+                            21th Street, Suite 721 New York NY 10016</p>
+                    </li>
+                    <li class="contact-aside-item">
+                        <i class="fa fa-phone contact-aside-icon"
+                            aria-hidden="true"></i>
+                        <p class="contact-aside-item-text">Phone: <a
+                                class="phone-link" href="tel:+1234567890">+1234
+                                5678 90</a></p>
+                    </li>
+
+                    <li class="contact-aside-item">
+                        <i class="fa fa-paper-plane contact-aside-icon"
+                            aria-hidden="true"></i>
+                        <p class="contact-aside-item-text">Email:
+                            info@yoursite.com</p>
+                    </li>
+                    <li class="contact-aside-item">
+                        <i class="fa fa-globe contact-aside-icon"
+                            aria-hidden="true"></i>
+                        <p class="contact-aside-item-text">Website: yoursite.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-main">
+                <h2 class="contact-main-title contact-title">Get in touch</h2>
+                <form class="contact-form">
+                    <div class="group-merge">
+                        <div class="contact-input-group">
+                            <label class="contact-label" for="name">Full name</label>
+                            <input class="contact-input" id="name" type="text"
+                                name="name"
+                                minlength="2"
+                                required placeholder="Name">
+                        </div>
+                        <div class="contact-input-group">
+                            <label class="contact-label" for="email">Email
+                                address</label>
+                            <input class="contact-input" id="email" type="email"
+                                name="email"
+                                required placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="contact-input-group">
+                        <label class="contact-label" for="subject">Subject</label>
+                        <input class="contact-input" id="subject" type="text"
+                            name="subject"
+                            maxlength="50"
+                            required placeholder="Subject">
+                    </div>
+
+                    <div class="contact-input-group">
+                        <label class="contact-label" for="message">Subject</label>
+                        <textarea class="contact-input contact-textarea"
+                            rows="5" id="message" required
+                            name="message"
+                            minlength="20"
+                            maxlength="500"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact-input-group">
+                        <button class="contact-submit-btn" type="submit">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
