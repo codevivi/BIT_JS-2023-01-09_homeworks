@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="container header-container">
+                <a class="logo" href="">
+                    <img class="logo-img" src="resources/logo-dark.png"
+                        alt="logo">
+                </a>
+                <button id="expand-mobile-nav" class="nav-expand-btn"
+                    type="button">
+                    <i class="mdi mdi-menu"></i>
+                    <!-- <img src="menu-24.png" alt=""> -->
+                </button>
+                <div id="expanding-nav-box" class="
+                    nav-box-expanding hidden-nav">
+                    <div class="container-mob">
+                        <nav class="nav ">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a class="nav-link
+                                        active"
+                                        href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link
+                                        "
+                                        href="#features">Features</a></li>
+                                <li class="nav-item"><a class="nav-link
+                                        "
+                                        href="#screenshot">Screenshot</a></li>
+                                <li class="nav-item"><a class="nav-link
+                                        "
+                                        href="#testimonial">Testimonial</a></li>
+                                <li class="nav-item"><a class="nav-link
+                                        "
+                                        href="#pricing">Pricing</a></li>
+                                <li class="nav-item"><a class="nav-link
+                                        "
+                                        href="#contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="nav login-nav">
+                            <ul class="nav-list login-list">
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="#login">Login</a>
+                                </li>
+                                <li class="nav-item nav-item-btn">
+                                    <a class="nav-link nav-link-signup"
+                                        href="#signup">Sign
+                                        Up</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="home">
+                <h1>bla bla</h1>
+
+            </section>
+        </main>
+
+        <script>
+            const expandNavBtn = document.getElementById('expand-mobile-nav');
+            const navBoxExpanding = document.getElementById('expanding-nav-box');
+            const header = document.getElementById('header');
+            expandNavBtn.addEventListener('click', expandNav);
+            function expandNav() {
+                header.classList.toggle('expanded');
+                if(navBoxExpanding.classList.contains('hidden-nav')) {
+                    navBoxExpanding.classList.remove('hidden-nav');
+                }else {
+                    setTimeout(()=> {
+                    navBoxExpanding.classList.add('hidden-nav');
+                    }, 400)
+                }
+            }
+        </script>
+    </body>
+</html>
