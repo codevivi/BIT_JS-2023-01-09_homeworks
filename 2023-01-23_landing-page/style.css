@@ -15,7 +15,7 @@ body {
 }
 
 p {
-  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 h1,
 h2,
@@ -23,13 +23,74 @@ h3,
 h4,
 h5,
 h6 {
-  color: #30353b;
+  color: #383e44;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+.section-title-1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.section-title-1 span {
+  font-weight: bold;
+  color: #30353b;
+  font-weight: bold;
 }
 
-/* //////////////////HEADER Starts */
-.container {
+.section-title-2 {
+  font-size: 1.7em;
+  color: #30353b;
+  max-width: 420px;
+  margin: 0 auto 1rem;
 }
+
+.section {
+  width: 100%;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+  margin: auto;
+  /* line-height: 1.6em; */
+}
+
+.double-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin: 3em 0; */
+}
+.double-flex-part {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .text-center {
+    max-width: 456px;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .double-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+  }
+  .double-flex-part {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-center {
+    max-width: 546px;
+  }
+}
+/* //////////////////HEADER Starts */
+
 .container,
 .container-mob {
   width: 100%;
@@ -46,7 +107,7 @@ h6 {
   transition: height 0.4s;
   background-color: #ffffff;
   box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.15);
-  z-index: 2;
+  z-index: 10;
 }
 
 .expanded {
@@ -144,8 +205,9 @@ h6 {
     text-align: center;
   }
   .header {
-    position: sticky;
+    position: fixed;
     height: 4em;
+    z-index: 1;
   }
   .header-container {
     margin-top: 0;
@@ -226,15 +288,7 @@ h6 {
   background-image: url("resources/hero-3-bg.png");
   background-size: cover;
 }
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.home-main {
-  max-width: 700px;
-}
+
 .home h1 {
   font-size: 2.2rem;
   margin-bottom: 0.6em;
@@ -242,6 +296,7 @@ h6 {
   font-weight: 700;
 }
 .home p {
+  font-size: 1.1rem;
   margin: 1.2em 0;
 }
 .home ul {
@@ -253,8 +308,7 @@ h6 {
   margin-right: 0.5em;
 }
 .home-img-wrapper {
-  width: 100%;
-  padding: 3em 0;
+  padding: 3em 0 0;
 }
 .home-img {
   display: block;
@@ -290,58 +344,20 @@ h6 {
 }
 @media screen and (min-width: 996px) {
   .home h1 {
-    font-size: 3em;
+    font-size: 3.2em;
   }
   .home p {
     max-width: 100%;
   }
   .home {
     margin-top: -4em;
-    padding: 7rem 0;
-  }
-  .home-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 0.5em;
-  }
-  .home-main {
-    flex: 1;
-  }
-  .home-img-wrapper {
-    flex: 1;
+    padding: 12rem 0;
   }
 }
 /* //////////////////HOME Ends */
 /* //////////////////HOW it works Starts */
-.section-how {
-  width: 100%;
-  padding: 3.5rem 0;
-  text-align: center;
-}
-.section-how-title {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.section-how-title {
-  color: #383e44;
-  font-weight: 400;
-}
-.section-how-title span {
-  font-weight: bold;
-  color: #30353b;
-  font-weight: bold;
-}
-.section-how h2 + h3 {
-  font-size: 1.7em;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.section-how p {
-  max-width: 546px;
+
+.how p {
   margin: auto;
   font-size: 1rem;
   line-height: 1.6em;
@@ -371,7 +387,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 0;
 }
 .how-icon {
   color: #30353b;
@@ -419,3 +435,9 @@ h6 {
     max-width: 260px;
   }
 }
+/* //////////////////HOW Ends */
+/* //////////////////FEATURES Starts */
+.features {
+  background-color: #f8f9fa;
+}
+/* //////////////////FEATURES Ends */
