@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Landing Page</title>
@@ -17,7 +18,7 @@
         </a>
         <button id="expand-mobile-nav" class="nav-expand-btn" type="button">
           <i class="mdi mdi-menu"></i>
-          <!-- <img src="menu-24.png" alt=""> -->
+          <!-- <span class="material-icons">menu</span> -->
         </button>
         <div id="expanding-nav-box" class="nav-box-expanding mobile-nav">
           <div class="container-mob">
@@ -50,19 +51,20 @@
         <div class="container home-container">
           <div class="home-main">
             <h1>Best Way to Make Online Payments</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus vel ex odio laborum voluptate.</p>
+            <p>Maecenas tempus, tellus eget condimentum rhoncus quam semper libero sit amet adipiscing sem neque sed.</p>
 
             <ul class="home-list">
               <li>
-                <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                <!-- <span class="material-icons">task_alt</span> -->
+                <i class="mdi mdi-checkbox-marked-circle-outline home-list-icon"></i>
                 Lorem ipsum dolor sit amet vitae.
               </li>
               <li>
-                <i class="mdi mdi-checkbox-marked-circle-outline"></i>
-                Lorem ipsum dolor sit amet bla bla rhoncus quam.
+                <i class="mdi mdi-checkbox-marked-circle-outline home-list-icon"></i>
+                Maecenas tempus tellus eget condimentum rhoncus quam.
               </li>
               <li>
-                <i class="mdi mdi-checkbox-marked-circle-outline"></i>
+                <i class="mdi mdi-checkbox-marked-circle-outline home-list-icon"></i>
                 Lorem ipsum dolor sit.
               </li>
             </ul>
@@ -75,8 +77,37 @@
       </section>
       <section class="section-how container">
         <h2 class="section-how-title">how it <span>work</span></h2>
-        <p>How does it work?</p>
+        <h3>How dose it work?</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque rem aperiam.</p>
+        <ol class="how-list">
+          <li class="how-item">
+            <div class="how-icon-wrapper">
+              <i class="mdi mdi-format-list-bulleted how-icon"></i>
+            </div>
+            <div>
+              <h4 class="how-item-title">1. Intuitive visual editor</h4>
+              <p class="how-item-text">Nemo enim ipsam quia voluptas sit aspernatur ist dolores.</p>
+            </div>
+          </li>
+          <li class="how-item">
+            <div class="how-icon-wrapper">
+              <i class="mdi mdi-palette-outline how-icon"></i>
+            </div>
+            <div>
+              <h4 class="how-item-title">2. Huge design collection</h4>
+              <p class="how-item-text">Nemo enim ipsam quia voluptas sit aspernatur ist dolores.</p>
+            </div>
+          </li>
+          <li class="how-item">
+            <div class="how-icon-wrapper">
+              <i class="mdi mdi-layers-triple how-icon"></i>
+            </div>
+            <div>
+              <h4 class="how-item-title">3. One click installation</h4>
+              <p class="how-item-text">Nemo enim ipsam quia voluptas sit aspernatur ist dolores.</p>
+            </div>
+          </li>
+        </ol>
       </section>
     </main>
 
@@ -102,7 +133,7 @@
               header.classList.add("header-mod");
             }
           }
-        }, 100);
+        }, 0);
       }
       function expandNav() {
         header.classList.toggle("expanded");
@@ -111,7 +142,7 @@
         } else {
           setTimeout(() => {
             navBoxExpanding.classList.add("mobile-nav");
-          }, 400);
+          }, 100);
         }
       }
     </script>
