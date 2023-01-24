@@ -18,6 +18,8 @@ h1 {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
 }
+
+/* //////////////////HEADER Starts */
 .container,
 .container-mob {
   width: 90%;
@@ -185,15 +187,18 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.1em;
+    font-size: 1em;
   }
-  header {
+  /* header {
     font-size: 0.9em;
-  }
+  } */
   .container {
     max-width: 1140px;
   }
 }
+
+/* //////////////////HEADER Ends */
+/* //////////////////HOME Starts */
 .home {
   min-height: 100vh;
   width: 100%;
@@ -264,6 +269,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    gap: 1em;
   }
   .home-main {
     flex: 1;
@@ -271,4 +277,33 @@ h1 {
   .home-img-wrapper {
     flex: 1;
   }
+}
+/* //////////////////HOME Ends */
+/* //////////////////HOW it works Starts */
+.section-how {
+  width: 100%;
+  padding-top: 4em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.section-how-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.section-how-title span {
+  font-weight: bold;
+  color: #30353b;
+  font-weight: bold;
+}
+.section-how h2 + p {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #30353b;
+  margin-bottom: 1rem;
+}
+.section-how p {
+  max-width: 546px;
+  margin: auto;
 }
