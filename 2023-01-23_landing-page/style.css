@@ -237,8 +237,16 @@ h1 {
   line-height: 1;
   border: none;
   background-color: #1f61eb;
+  transition: all 0.2s;
   color: white;
   border-radius: 4px;
+}
+.home-btn:hover,
+.home-bt:focus {
+  border: none;
+  outline: none;
+  background-color: #1057ea;
+  box-shadow: -2px 7px 10px 0px rgba(31, 97, 235, 0.3);
 }
 
 @media screen and (min-width: 514px) {
@@ -249,6 +257,7 @@ h1 {
 @media screen and (min-width: 992px) {
   .home {
     margin-top: -4em;
+    padding: 7rem;
   }
   .home-container {
     flex-direction: row;
