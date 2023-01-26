@@ -34,6 +34,9 @@ strong {
 .full-width {
   width: 100%;
 }
+.bg-grey {
+  background-color: #f8f9fa;
+}
 .section-title-1 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -920,3 +923,59 @@ strong {
   }
 }
 /* //////////////////PRICING Ends */
+/* //////////////////FAQ Starts */
+.faq-list {
+  list-style: none;
+}
+.faq-item {
+  box-shadow: 0 3px 5px 0 rgba(106, 110, 119, 0.2);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq-item-btn {
+  width: 100%;
+  color: #536976;
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Open Sans";
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item-btn:hover {
+  cursor: pointer;
+}
+.faq-item-open .faq-item-btn {
+  background-color: #e6e9ef;
+  color: #343a40;
+}
+.faq-item-text {
+  text-align: left;
+  height: 0;
+  background-color: white;
+}
+/* Atsimink !!!!!!!!!!  Can't set height to 0 when padding applied, box-sizing: border box, no effect*/
+
+.faq-item-open .faq-item-text {
+  padding: 1rem;
+  height: auto;
+}
+
+@media screen and (min-width: 996px) {
+  .faq .double-flex-part:last-child {
+    flex: 1.4;
+  }
+  .faq .double-flex-part:first-child {
+    text-align: left;
+  }
+  .faq-image {
+    max-width: 356px;
+  }
+}
+
+/* //////////////////FAQ Ends */
