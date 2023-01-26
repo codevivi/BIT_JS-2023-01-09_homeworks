@@ -731,3 +731,17 @@ strong {
   }
 }
 /* //////////////////SCREENSHOT Ends */
+/* //////////////////TESTIMONIALS Starts */
+.testimonials {
+  background-color: #f8f9fa;
+}
+.testimonials .highlight {
+  margin: 0.5rem auto;
+  max-width: 736px;
+  font-family: "Open Sans";
+}
+
+.testimonials .highlight strong {
+  font-weight: 700;
+}
+/* //////////////////TESTIMONIALS Ends */
