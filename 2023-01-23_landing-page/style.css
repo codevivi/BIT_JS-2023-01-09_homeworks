@@ -980,5 +980,47 @@ strong {
 
 /* //////////////////FAQ Ends */
 /* //////////////////APP STORES Starts */
+.app-stores {
+  text-align: center;
+}
+.app-stores h2 {
+  font-size: 2rem;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
 
+.app-stores p {
+  max-width: 387px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.app-stores a:first-child img {
+  margin-right: 0.5rem;
+}
+.app-stores a {
+  text-decoration: none;
+}
+.app-stores a img {
+  height: 52px;
+  width: auto;
+}
+@media screen and (min-width: 996px) {
+  .app-stores h2 {
+    font-size: 2.6rem;
+    max-width: 500px;
+  }
+
+  .app-stores p {
+    width: 80%;
+    max-width: 694px;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .app-stores h2 {
+    font-size: 3rem;
+  }
+}
 /* //////////////////APP STORES Ends */
