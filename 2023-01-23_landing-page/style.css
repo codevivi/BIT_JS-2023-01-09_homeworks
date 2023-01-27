@@ -1025,22 +1025,22 @@ strong {
 }
 /* //////////////////APP STORES Ends */
 /* //////////////////CONTACT Starts */
-.contact-info {
+.contact {
   text-align: left;
 }
 .contact-info a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 .contact-info-header {
   display: inline-flex;
   align-items: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #343a40;
-  font-family: "Open Sans";
   gap: 1rem;
   margin-bottom: 3rem;
+  color: #343a40;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 .contact-info-list {
   list-style: none;
@@ -1048,24 +1048,24 @@ strong {
 .contact-info-label {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 1rem;
   gap: 1rem;
+  margin-bottom: 1rem;
+  color: #343a40;
   font-weight: 600;
   font-size: 1rem;
   font-family: "Open Sans";
-  color: #343a40;
 }
 
 .contact-info-icon {
-  font-size: 1.3rem;
-  color: #1f61eb;
-  background-color: #d7e2f8;
-  height: 2em;
-  width: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 2em;
+  width: 2em;
+  color: #1f61eb;
+  background-color: #d7e2f8;
   border-radius: 8px;
+  font-size: 1.3rem;
 }
 .contact-info-details {
   margin-bottom: 1rem;
@@ -1073,17 +1073,78 @@ strong {
 }
 .contact-info-details li div {
   display: inline-flex;
-  gap: 0.5rem;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .contact-info-details li {
   margin-bottom: 0.5rem;
 }
+.contact-form {
+  padding: 3rem;
+  background-color: white;
+  box-shadow: 0 3px 20px 0 rgba(106, 110, 119, 0.1);
+  border-radius: 8px;
+}
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+textarea {
+  padding: 1rem;
+  border: 1px solid #e9ecf1;
+  border-radius: 4px;
+}
+
+.contact-form label {
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+.contact-form button {
+  position: relative;
+  top: 1rem;
+  padding: 0.7rem 2rem;
+  color: white;
+  background: rgb(235, 33, 83);
+  background: linear-gradient(90deg, rgba(235, 33, 83, 1) 0%, rgba(245, 148, 172, 1) 100%);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.contact-form .divide-onmed {
+  margin: 0;
+}
+.contact textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
 
 @media screen and (min-width: 996px) {
   .contact-info-header {
     font-size: 2rem;
+  }
+  .contact-form {
+    flex: 1.2;
+  }
+  .contact-form .divide-onmed {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 /* //////////////////CONTACT Ends */
