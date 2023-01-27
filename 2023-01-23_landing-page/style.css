@@ -1202,23 +1202,30 @@ h3 {
   list-style: none;
 }
 .nav-more-list li {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .nav-more-list a {
   color: #adb0b2;
   position: relative;
   padding: 0 1rem;
+  margin-left: -5px;
+  transition: all 0.4s;
+}
+
+.nav-more-list a:hover {
+  margin-left: 0;
 }
 .nav-more-list a:before {
   content: "";
   display: block;
-  padding: 3px;
+  border-radius: 50%;
+  padding: 2px;
   width: 1px;
   height: 1px;
   position: absolute;
   left: 0;
-  top: 1rem;
+  top: 0.8rem;
 
   background-color: #1f61eb;
 }
