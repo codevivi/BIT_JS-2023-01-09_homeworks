@@ -1210,11 +1210,13 @@ h3 {
   position: relative;
   padding: 0 1rem;
   margin-left: -5px;
-  transition: all 0.4s;
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .nav-more-list a:hover {
-  margin-left: 0;
+  /* margin-left: 0; */
+  transform: translateX(1rem);
 }
 .nav-more-list a:before {
   content: "";
