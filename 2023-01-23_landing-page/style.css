@@ -1024,3 +1024,66 @@ strong {
   }
 }
 /* //////////////////APP STORES Ends */
+/* //////////////////CONTACT Starts */
+.contact-info {
+  text-align: left;
+}
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-info-header {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+  font-family: "Open Sans";
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.contact-info-list {
+  list-style: none;
+}
+.contact-info-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Open Sans";
+  color: #343a40;
+}
+
+.contact-info-icon {
+  font-size: 1.3rem;
+  color: #1f61eb;
+  background-color: #d7e2f8;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.contact-info-details {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.contact-info-details li div {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-info-details li {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 996px) {
+  .contact-info-header {
+    font-size: 2rem;
+  }
+}
+/* //////////////////CONTACT Ends */
