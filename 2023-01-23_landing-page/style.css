@@ -2,15 +2,15 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-margin-top: 2rem;
+  scroll-margin-top: 55px; /*same as header- to offset fixed heading when scrolling on link clik*/
 }
 body {
-  overflow: auto;
   color: #6c757d;
   font-family: "Mandali", "Open Sans", sans-serif;
 }
@@ -23,19 +23,37 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  color: #383e44;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 1rem;
-}
+h6,
 strong {
-  color: #383e44;
+  color: #343a40;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.container,
+.container-mob {
+  width: 100%;
+  max-width: 540px;
+  margin: auto;
+  padding: 0 12px;
 }
 .full-width {
   width: 100%;
 }
-.bg-grey {
+.bg-coloured {
   background-color: #f8f9fa;
+}
+.section {
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+}
+.section-intro {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 64px;
 }
 .section-title-1 {
   text-transform: uppercase;
@@ -43,23 +61,10 @@ strong {
   font-weight: 400;
 }
 .section-title-2 {
-  font-size: 1.7em;
-  color: #30353b;
+  font-size: 1.85em;
   max-width: 420px;
-  margin: 0 auto 1rem;
+  margin-bottom: 1rem;
 }
-
-.section {
-  width: 100%;
-  padding: 6.5rem 0;
-  text-align: center;
-}
-.text-center {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 4rem;
-}
-
 .double-flex {
   display: flex;
   flex-direction: column;
@@ -70,26 +75,29 @@ strong {
 .double-flex-part {
   width: 100%;
 }
-.double-flex-part-img {
-  width: 100%;
-  max-width: 500px;
-  display: block;
-  margin: auto;
-}
 @media screen and (min-width: 768px) {
-  .text-center {
+  .container,
+  .container-mob {
+    /* cotnainer mob is for expanded navigation on mobile*/
+    max-width: 720px;
+  }
+  .section-intro {
     max-width: 456px;
   }
 }
 
 @media screen and (min-width: 996px) {
   * {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 66px;
   }
+  .container {
+    width: 100%;
+    max-width: 960px;
+  }
+
   .double-flex {
     flex-direction: row;
     align-items: center;
-    /* justify-content: flex-start; */
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 0.5em;
@@ -99,52 +107,54 @@ strong {
   }
 }
 @media screen and (min-width: 1200px) {
-  .text-center {
+  .container {
+    max-width: 1140px;
+  }
+  .section-intro {
     max-width: 546px;
   }
 }
 /* //////////////////HEADER Starts */
 
-.container,
-.container-mob {
-  width: 100%;
-  max-width: 540px;
-  margin: auto;
-  padding: 0 0.75rem;
-}
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 3.5em;
-  overflow: hidden;
-  transition: height 0.4s;
+  height: 55px;
+  overflow: hidden; /*to hide inner section on mobile when expanding*/
   background-color: #ffffff;
   box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.15);
+  transition: height 0.3s;
+  transition-timing-function: ease-in-out;
   z-index: 10;
 }
-
-.expanded {
-  height: 360px;
+.header.expanded {
+  height: 360px; /* on mobile*/
 }
-.header-container {
+.header .container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 0.2em;
+  height: 55px; /*same as header*/
+  margin-top: 0;
   background-color: transparent;
 }
 .nav-box-expanding {
+  /*nav links that are hidden when contracted on mobile*/
   position: absolute;
-  top: 3.5em;
+  top: 44px; /* from header top*/
   left: 0;
   width: 100%;
-  margin-top: -0.8em;
-}
-.mobile-nav {
-  display: none;
+  height: 100%;
 }
 
+.nav-box-expanding .container {
+  /* padding: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .nav-expand-btn {
   padding: 0.5rem;
   border: none;
@@ -157,15 +167,16 @@ strong {
   align-items: flex-start;
   justify-content: center;
   list-style: none;
+  width: 100%;
 }
 .nav-item {
   height: auto;
   width: 100%;
-  margin: 0.17em;
+  margin: 2.5px 0;
 }
 .nav-link {
   padding: 0.3em 0;
-  color: inherit;
+  color: #343a40;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -187,11 +198,12 @@ strong {
   color: white;
 }
 
-.active {
+.nav-link.active {
   color: #1f61eb;
   position: relative;
 }
-.active::after {
+.nav-link.active::after {
+  /*to make not full length underline*/
   content: "";
   height: 100%;
   width: 50%;
@@ -200,96 +212,60 @@ strong {
   left: 25%;
   border-bottom: 2px solid #1f61eb;
 }
-@media screen and (min-width: 768px) {
-  .container,
-  .container-mob {
-    max-width: 720px;
-  }
-}
+
 @media screen and (min-width: 996px) {
-  .container {
-    width: 100%;
-    max-width: 960px;
-    /* padding: 0; */
-  }
-  .container-mob {
-    padding: 0;
-    flex: 1;
-    max-width: 100%;
-    text-align: center;
-  }
-  .header {
-    position: fixed;
-    height: 4em;
+  .header,
+  .header.expanded {
+    /*this also disables expanded class on window resize, when resizing on expanded*/
+    height: 78px;
+    overflow: visible;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 0.6s;
     z-index: 1;
   }
-  .header-container {
-    margin-top: 0;
+  .header.on-scroll {
+    height: 66px;
+    background-color: white;
+    box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.15);
   }
-  .logo {
-    padding-top: 0.7em;
-  }
-
-  .mobile-nav {
-    display: block;
+  .header .container {
+    height: 100%;
   }
   .nav-expand-btn {
     display: none;
   }
   .nav-box-expanding {
     position: static;
-    flex: 1;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* flex: 1; */
+  }
+  .nav-box-expanding .container {
+    padding: 0;
     margin: 0;
-  }
-  .header-container {
-    display: flex;
+    flex: 1;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    max-width: 100%;
   }
-  .header {
-    overflow: visible;
-    background-color: transparent;
-    box-shadow: none;
-    z-index: 1;
-  }
-  .header-mod {
-    background-color: white;
-    box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.15);
-  }
-  .nav {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  .page-nav {
+    flex: 1;
   }
   .login-nav {
-    float: right;
+    max-width: fit-content; /* what does this does why, it works, what difference between auto*/
   }
   .nav-list {
     flex-direction: row;
+    gap: 2.2rem;
   }
-  .login-list {
-    margin: 0;
-    padding: 0;
-  }
-  .login-list .nav-item {
-    margin: 0;
-    margin-left: 1.5em;
-    padding: 0;
+  .nav-list.login-list {
+    gap: 1rem;
   }
   .nav-item {
     width: auto;
-    margin: 0 1.1em;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
 }
 
 /* //////////////////HEADER Ends */

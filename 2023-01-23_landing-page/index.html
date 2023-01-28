@@ -14,7 +14,7 @@
 
 <body>
   <header id="header" class="header">
-    <div class="container offset header-container">
+    <div class="container">
       <a class="logo" href="">
         <img class="logo-img" src="resources/logo-dark.png" alt="logo" />
       </a>
@@ -22,9 +22,9 @@
         <i class="mdi mdi-menu"></i>
         <!-- <span class="material-icons">menu</span> -->
       </button>
-      <div id="expanding-nav-box" class="nav-box-expanding mobile-nav">
-        <div class="container-mob">
-          <nav class="nav">
+      <div id="expanding-nav-box" class="nav-box-expanding">
+        <div class="container">
+          <nav class="nav page-nav">
             <ul class="nav-list">
               <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
@@ -85,7 +85,7 @@
     </section>
     <section class="section how">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">how it <strong>work</strong></h2>
           <h3 class="section-title-2">How dose it work?</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -127,7 +127,7 @@
     </section>
     <section id="features" class="features section">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">Our <strong>features</strong></h2>
           <h3 class="section-title-2">Smart Solutions For Buys People</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -135,7 +135,7 @@
         </div>
         <div class="double-flex features-double-flex-1">
           <div class="double-flex-part flex-part-img">
-            <img class="double-flex-part-img" src="resources/features-1.png" alt="mobile showing app features" />
+            <img src="resources/features-1.png" alt="mobile showing app features" />
           </div>
           <div class="double-flex-part flex-part-text">
             <h4>Discover your destination</h4>
@@ -204,7 +204,7 @@
             </ul>
           </div>
           <div class="double-flex-part flex-part-img">
-            <img class="double-flex-part-img" src="resources/features-2.png" alt="mobile showing app features" />
+            <img src="resources/features-2.png" alt="mobile showing app features" />
           </div>
         </div>
       </div>
@@ -251,7 +251,7 @@
     </div>
     <div class="container">
       <section id="screenshot" class="screenshot section">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">App <strong>Screens</strong></h2>
           <h3 class="section-title-2">Awesome Screenshot</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -297,7 +297,7 @@
     </div>
     <section id="testimonials" class="section testimonials">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">Our <strong>Testimonial</strong></h2>
           <h3 class="section-title-2">What Our Customers Say</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -324,7 +324,7 @@
     </section>
     <section id="pricing" class="section pricing">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">Our <strong>Pricing</strong></h2>
           <h3 class="section-title-2">Pricing Plan</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -405,9 +405,9 @@
         </div>
       </div>
     </section>
-    <section class="section faq bg-grey">
+    <section class="section faq bg-coloured">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">Our <strong>FAQs</strong></h2>
           <h3 class="section-title-2">Frequently Asked Questions</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -511,9 +511,9 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="section contact bg-grey">
+    <section id="contact" class="section contact bg-coloured">
       <div class="container">
-        <div class="text-center">
+        <div class="section-intro">
           <h2 class="section-title-1">Our <strong>Contact Us</strong></h2>
           <h3 class="section-title-2">Get in Touch</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error voluptatem
@@ -718,23 +718,23 @@
       debounceTimer = window.setTimeout(() => {
         const scrollY = window.pageYOffset;
         if (scrollY <= 0) {
-          header.classList.remove("header-mod");
+          header.classList.remove("on-scroll");
         } else if (scrollY >= headerBottom) {
-          if (!header.classList.contains("header-mod")) {
-            header.classList.add("header-mod");
+          if (!header.classList.contains("on-scroll")) {
+            header.classList.add("on-scroll");
           }
         }
       }, 0);
     }
     function expandNav() {
       header.classList.toggle("expanded");
-      if (navBoxExpanding.classList.contains("mobile-nav")) {
-        navBoxExpanding.classList.remove("mobile-nav");
-      } else {
-        setTimeout(() => {
-          navBoxExpanding.classList.add("mobile-nav");
-        }, 100);
-      }
+      // if (navBoxExpanding.classList.contains("mobile-nav")) {
+      //   navBoxExpanding.classList.remove("mobile-nav");
+      // } else {
+      //   setTimeout(() => {
+      //     navBoxExpanding.classList.add("mobile-nav");
+      //   }, 100);
+      // }
     }
   </script>
 </body>
