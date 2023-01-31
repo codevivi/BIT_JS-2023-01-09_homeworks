@@ -27,11 +27,20 @@
         font-weight: bold;
       }
 
-      .container {
+      .body {
         font-family: "Liberation Sans", "Open-Sans", sans-serif;
       }
+      table {
+        min-width: 250px !important;
+        width: 100% !important;
+      }
+      small {
+        font-size: 0.8rem;
+      }
       .card {
+        min-width: 300px;
         max-width: 1108px;
+        overflow-x: scroll;
       }
       td:last-child {
         width: 8px;
@@ -40,14 +49,14 @@
   </head>
 
   <body class="bg-body-secondary">
-    <div class="container mx-auto">
+    <div class="container-sm p-0 mx-auto">
       <div class="card w-100 mx-auto mt-5">
         <h1 class="card-header fw-normal fs-2 pt-3 pb-4 px-4">Shopping Cart</h1>
         <div class="card-body p-3">
-          <table class="table table-bordered w-100 table-small mb-4">
+          <table class="table table-bordered border-secondary-subtle w-100 table-small mb-4">
             <thead>
               <tr class="text-center fs-6">
-                <th class="p-3 fs-6">Product Name & Details</th>
+                <th class="p-3">Product Name & Details</th>
                 <th class="p-3 text-right">Price</th>
                 <th class="p-3 text-right">Quanity</th>
                 <th class="p-3 text-right">Total</th>
@@ -55,64 +64,64 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="p-4">
-                <td class="d-flex p-4 border-top-2">
-                  <img src="assets/img/avatar1.png" width="40" height="40" alt="placeholder avatar" />
-                  <div class="d-flex flex-column justify-content-start text-secondary ps-4">
+              <tr class="py-md-4">
+                <td class="d-flex flex-column align-items-center flex-md-row p-sm-4">
+                  <img class="d-block" src="assets/img/avatar1.png" width="40" height="40" alt="placeholder avatar" />
+                  <div class="d-flex flex-column justify-content-md-center text-secondary ps-md-4">
                     <p class="fs-6 text-dark mb-0">Product 1</p>
-                    <span class="d-block">
-                      <small class="me-2">Color:<i class="fa fa-circle fs-6 ms-2 text-danger" aria-hidden="true"></i> </small>
-                      <small class="me-2">Size: <span class="text-dark"> EU 37</span> </small>
+                    <span class="d-flex flex-column d-lg-block">
+                      <small class="me-sm-2">Color:<i class="fa fa-circle fs-6 ms-2 text-danger" aria-hidden="true"></i> </small>
+                      <small class="me-sm-2">Size: <span class="text-dark"> EU 37</span> </small>
                       <small>Ships from: <span class="text-dark"> China</span> </small>
                     </span>
                   </div>
                 </td>
-                <td class="align-middle text-end fs-6 pe-4">$57.55</td>
-                <td class="align-middle text-center fs-6 px-4">
+                <td class="align-middle text-end fs-6 pe-sm-4">$57.55</td>
+                <td class="align-middle text-center fs-6 px-sm-4">
                   <span class="d-inline-block py-1 w-100 border rounded-1">2</span>
                 </td>
-                <td class="align-middle text-end fs-6 px-4">$115.1</td>
+                <td class="align-middle text-end fs-6 px-sm-4">$115.1</td>
                 <td class="align-middle text-center">
                   <button class="btn text-danger p-1 text-opacity-50" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
                 </td>
               </tr>
-              <tr class="p-4">
-                <td class="d-flex p-4">
-                  <img src="assets/img/avatar2.png" width="40" height="40" alt="placeholder avatar" />
-                  <div class="d-flex flex-column justify-content-start text-secondary ps-4">
+              <tr class="py-md-4">
+                <td class="d-flex flex-column align-items-center flex-md-row p-sm-4">
+                  <img class="d-block" src="assets/img/avatar2.png" width="40" height="40" alt="placeholder avatar" />
+                  <div class="d-flex flex-column justify-content-md-center text-secondary ps-md-4">
                     <p class="fs-6 text-dark mb-0">Product 2</p>
-                    <span class="d-block">
-                      <small class="me-2">Color:<i class="fa fa-circle ms-2 fs-6 text-dark" aria-hidden="true"></i> </small>
-                      <small class="me-2">Storage: <span class="text-dark"> 32 GB</span> </small>
-                      <small class="me-2">Warranty: <span class="text-dark"> Standart - 1year</span> </small>
+                    <span class="d-flex flex-column d-lg-block">
+                      <small class="me-sm-2">Color:<i class="fa fa-circle fs-6 ms-2 text-dark" aria-hidden="true"></i> </small>
+                      <small class="me-sm-2">Storage: <span class="text-dark"> 32 GB</span> </small>
+                      <small class="me-sm-2">Warranty: <span class="text-dark"> Standart - 1 year</span> </small>
                       <small>Ships from: <span class="text-dark"> China</span> </small>
                     </span>
                   </div>
                 </td>
-                <td class="align-middle text-end fs-6 pe-4">$1049.00</td>
-                <td class="align-middle text-center px-4 fs-6">
-                  <div class="py-1 w-100 d-inline-block border rounded-1">1</div>
+                <td class="align-middle text-end fs-6 pe-sm-4">$57.55</td>
+                <td class="align-middle text-center fs-6 px-sm-4">
+                  <span class="d-inline-block py-1 w-100 border rounded-1">2</span>
                 </td>
-                <td class="align-middle text-end fs-6 pe-4">$1049.00</td>
+                <td class="align-middle text-end fs-6 px-sm-4">$115.1</td>
                 <td class="align-middle text-center">
                   <button class="btn text-danger p-1 text-opacity-50" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
                 </td>
               </tr>
-              <tr class="p-4">
-                <td class="d-flex p-4">
-                  <img src="assets/img/avatar3.png" width="40" height="40" alt="placeholder avatar" />
-                  <div class="d-flex flex-column justify-content-start text-secondary ps-4">
+              <tr class="py-md-4">
+                <td class="d-flex flex-column align-items-center flex-md-row p-sm-4">
+                  <img class="d-block" src="assets/img/avatar3.png" width="40" height="40" alt="placeholder avatar" />
+                  <div class="d-flex flex-column justify-content-md-center text-secondary ps-md-4">
                     <p class="fs-6 text-dark mb-0">Product 3</p>
-                    <span class="d-block">
+                    <span class="d-flex flex-column d-lg-block">
                       <small>Ships from: <span class="text-dark"> Germany</span> </small>
                     </span>
                   </div>
                 </td>
-                <td class="align-middle text-end fs-6 pe-4">$20.55</td>
-                <td class="align-middle text-center fs-6 px-4">
-                  <span class="d-inline-block w-100 py-1 border rounded-1">1</span>
+                <td class="align-middle text-end fs-6 pe-sm-4">$20.55</td>
+                <td class="align-middle text-center fs-6 px-sm-4">
+                  <span class="d-inline-block py-1 w-100 border rounded-1">1</span>
                 </td>
-                <td class="align-middle text-end fs-6 pe-4">$20.55</td>
+                <td class="align-middle text-end fs-6 px-sm-4">$20.55</td>
                 <td class="align-middle text-center">
                   <button class="btn text-danger p-1 text-opacity-50" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
                 </td>
@@ -120,13 +129,13 @@
             </tbody>
           </table>
           <form class="text-secondary">
-            <div class="d-flex align-items-start justify-content-between mb-4">
-              <div class="d-flex flex-column">
+            <div class="d-flex flex-column flex-sm-row align-items-end align-items-sm-start justify-content-between mb-4">
+              <div class="d-flex flex-column align-self-start w-50 w-sm-auto">
                 <label for="promocode" class="mb-2">Promocode</label>
                 <input id="promocode" class="border border-1 rounded-1 py-2 px-3" placeholder="ABC" />
               </div>
               <div class="d-flex gap-4">
-                <div class="d-flex flex-column align-items-end me-4">
+                <div class="d-flex flex-column align-items-end me-sm-4">
                   <div class="mb-2">Discount</div>
                   <div class="text-dark fw-bold text-end">$20</div>
                 </div>
