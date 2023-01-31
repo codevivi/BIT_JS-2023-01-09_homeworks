@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="new Description" />
+    <meta name="keywords" content="list all keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>2023-01-31 Frist JavaScript homework</h1>
+    <script>
+      // 1.
+      // Sukurti du kintamuosius.
+      // Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis).
+      // Atspausdinti trumpesnį stringą.
+      console.log(`
+      Pirma užduotis:`);
+
+      let actorName = "Benedict";
+      let actorSurname = "Cumberbatch";
+      if (actorName.length > actorSurname.length) {
+        console.log(actorSurname);
+      } else if (actorName.length < actorSurname.length) {
+        console.log(actorName);
+      }
+      //else do nothing, as only need to print shortest
+
+      // 2.
+      // Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus).
+      // Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių
+      // ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+      // "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+      console.log(`
+      Antra užduotis:`);
+
+      let name = "Vilma";
+      let surname = "Jovaišaitė";
+      let birthYear = 1983;
+      let yearNow = new Date().getFullYear();
+      console.log("Aš esu " + name + " " + surname + ". Man yra " + (yearNow - birthYear) + " metai(ų).");
+
+      console.log(`
+      Trečia užduotis:`);
+      // 3.
+      // Sukurti du kintamuosius.
+      // Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus.
+      // Sukurti trečią kintamąjį ir jam priskirti stringą,
+      // sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių.
+      // Jį atspausdinti.
+
+      let actressName = "Kaywinnet";
+      let actressSurname = "Lee";
+      let mergedLastLetters = actressName.slice(-3) + actressSurname.slice(-3);
+      console.log(mergedLastLetters);
+
+      console.log(`
+      Ketvirta užduotis:`);
+      // 4.
+      // Sukurti kintamąjį su stringu: “Once upon a time in hollywood”.
+      // Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.
+      // Rezultatą atspausdinti.
+
+      let sentence = "Once upon a time in hollywood";
+      //sentence = sentence.replaceAll(/o/gi, "*"); //this is with regex
+      sentence = sentence.replaceAll("o", "*").replaceAll("O", "*");
+      console.log(sentence);
+
+      console.log(`
+      Penkta užduotis:`);
+      // 5.
+      // Sukurkite keturis kintamuosius kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2.
+      // Suskaičiuokite kiek yra nulių, vienetų ir dvejetų.
+      let rand1 = rand(0, 2);
+      let rand2 = rand(0, 2);
+      let rand3 = rand(0, 2);
+      let rand4 = rand(0, 2);
+      let zeros = 0,
+        ones = 0,
+        twos = 0;
+
+      if (rand1 === 2) {
+        twos++;
+      } else if (rand1) {
+        ones++;
+      } else {
+        zeros++;
+      }
+      if (rand2 === 2) {
+        twos++;
+      } else if (rand2) {
+        ones++;
+      } else {
+        zeros++;
+      }
+      if (rand3 === 2) {
+        twos++;
+      } else if (rand3) {
+        ones++;
+      } else {
+        zeros++;
+      }
+      if (rand4 === 2) {
+        twos++;
+      } else if (rand4) {
+        ones++;
+      } else {
+        zeros++;
+      }
+      console.log(`Iš sugeneruotų skaičių: (${rand1}, ${rand2}, ${rand3}, ${rand4})
+      suskaičiuoti nuliai: ${zeros},
+      suskaičiuoti vienetai: ${ones},
+      suskaičiuoti devejetai: ${twos}`);
+
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+    </script>
+  </body>
+</html>
