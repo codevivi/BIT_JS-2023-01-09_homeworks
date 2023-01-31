@@ -25,7 +25,6 @@
       } else if (actorName.length < actorSurname.length) {
         console.log(actorName);
       }
-      //else do nothing, as only need to print shortest
 
       // 2.
       // Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus).
@@ -84,30 +83,23 @@
         twos++;
       } else if (rand1) {
         ones++;
-      } else {
-        zeros++;
       }
       if (rand2 === 2) {
         twos++;
       } else if (rand2) {
         ones++;
-      } else {
-        zeros++;
       }
       if (rand3 === 2) {
         twos++;
       } else if (rand3) {
         ones++;
-      } else {
-        zeros++;
       }
       if (rand4 === 2) {
         twos++;
       } else if (rand4) {
         ones++;
-      } else {
-        zeros++;
       }
+      zeros = 4 - twos - ones;
       console.log(`Iš sugeneruotų skaičių: (${rand1}, ${rand2}, ${rand3}, ${rand4})
       suskaičiuoti nuliai: ${zeros},
       suskaičiuoti vienetai: ${ones},
