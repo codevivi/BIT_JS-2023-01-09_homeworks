@@ -1,4 +1,53 @@
 document.write(`
+    <style>
+      body {
+        font-family: monospace;
+        min-height: 100vh;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 2em;
+        margin: auto;
+        color: #969595;
+        background-color: #1b1b1b;
+      }
+
+      p {
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+      }
+
+      ol {
+        margin: auto;
+        text-align: left;
+      }
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      li div {
+        margin-top: 1rem;
+        position: relative;
+      }
+
+      .long-string {
+        display: block;
+        padding: 1.5rem 0;
+        overflow-x: scroll;
+        font-size: 0.9rem;
+        width: 100%;
+        overflow-x: scroll;
+      }
+
+      .square {
+        font-size: 0.8rem;
+        line-height: 0.48rem;
+        justify-content: center;
+      }
+    </style>
+`);
+document.write(`
 <h1>JavaScript homework <small>2023-02-02</small></h1>
 <ol>
 <li>
