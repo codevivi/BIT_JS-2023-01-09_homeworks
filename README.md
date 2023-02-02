@@ -1,5 +1,10 @@
 # 📚
 
+P.S. kursiokams ir ne tik:
+
+Visada dėkinga už bugų, pievų pastebėjimus mano kode.
+Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
+
 ## HTML, CSS
 
 1. 2023-01-10 [Periodinė elementų lentelė 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-10_html-periodine-elementu-lentele/index.html)
@@ -16,3 +21,5 @@
 1. 2023-01-31 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html) (check console logs)
 
 2. 2023-02-01 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html) (check console logs)
+
+3. 2023-02-02 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
