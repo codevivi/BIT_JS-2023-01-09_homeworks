@@ -23,4 +23,3 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 2. 2023-02-01 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html) (check console logs)
 
 3. 2023-02-02 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
-   **Not working styles as all static html gets cleared after document.write() call**. Was expecting, but locally did work...
