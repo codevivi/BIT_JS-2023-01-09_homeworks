@@ -13,4 +13,6 @@
 
 ## HTML, CSS, **JavaScript**
 
-1. 2023-01-31 [First JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html) (console logged)
+1. 2023-01-31 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html) (check console logs)
+
+2. 2023-02-01 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html) (check console logs)

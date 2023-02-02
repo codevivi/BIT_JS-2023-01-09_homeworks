@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="new Description" />
+    <meta name="keywords" content="list all keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: monospace;
+      text-align: center;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <h1>JavaScript homework <small>2023-02-01</small></h1>
+    <script>
+      console.log(`
+        Pirma užduotis:`);
+
+      let rand1 = rand(0, 4);
+      let rand2 = rand(0, 4);
+      let answer;
+      if (rand1 > rand2) {
+        answer = (rand1 / rand2).toFixed(2);
+        if (rand2 === 0) {
+          answer = "division by 0 is impossible";
+        }
+      } else if (rand2 > rand1) {
+        answer = (rand2 / rand1).toFixed(2);
+        if (rand1 === 0) {
+          answer = "division by 0 is impossible";
+        }
+      } else {
+        answer = "both number are equal, so not dividing";
+      }
+      console.log(`Two generated random numbers was: ${rand1} and ${rand2}. Larger divided from smaller: ${answer}`);
+
+      console.log(`
+        Antra užduotis:`);
+
+      rand1 = rand(0, 25);
+      rand2 = rand(0, 25);
+      let rand3 = rand(0, 25);
+      if (rand1 === rand2 || rand1 === rand3 || rand2 === rand3) {
+        answer = "Two or all numbers are equal,so middle number is impossible to find";
+      } else {
+        let minNumber = Math.min(rand1, rand2, rand3);
+        let maxNumber = Math.max(rand1, rand2, rand3);
+        if (rand1 !== minNumber && rand1 !== maxNumber) {
+          answer = rand1;
+        } else if (rand2 !== minNumber && rand2 !== maxNumber) {
+          answer = rand2;
+        } else {
+          answer = rand3;
+        }
+      }
+
+      console.log(`Three generated random numbers was: ${rand1}, ${rand2} and ${rand3}. Middle number is: ${answer}`);
+
+      console.log(`
+        Trečia užduotis:`);
+      let actorName = "Bob";
+      let actorSurname = "Odenkirk";
+      let actorInitials = actorName[0] + actorSurname[0];
+      console.log(`If name is ${actorName} and surname is ${actorSurname}, then initials would be: ${actorInitials}`);
+
+      console.log(`
+        Ketvirta užduotis:`);
+
+      // letter codes from ASCII table
+      let random3letterString = String.fromCharCode(rand(97, 122), rand(97, 122), rand(97, 122));
+      console.log(`Random string from 3 lower case letters would be: ${random3letterString}`);
+
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+    </script>
+  </body>
+</html>
