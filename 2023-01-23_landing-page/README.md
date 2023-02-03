@@ -8,9 +8,8 @@ HTML, CSS and a little bit of JS for responsive navigation and header effect.
 
 ## Todo for myself
 
-1. Fix bottom nav input hover effect, now it cuts word when wrapping.
-   Maby do with text-indent ...
+- [x] Fix bottom nav input hover effect, now it cuts word when wrapping.
 
-2. Add active class to nav links on scroll (JS)).
+- [x] Add active class to nav links on scroll (JS)).
 
-3. Try to implement image carousel functionality (JS).
+- [ ] Try to implement image carousel functionality (JS).

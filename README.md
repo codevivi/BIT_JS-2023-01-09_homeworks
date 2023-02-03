@@ -18,10 +18,14 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 ## HTML, CSS, **JavaScript**
 
-1. 2023-01-31 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html) (check console logs)
+(check console logs)
+(+variables,data types)
 
-2. 2023-02-01 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html) (check console logs)
+2. 2023-02-01 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html)
+   (check console logs)(+ conditionals)
 
-3. 2023-02-02 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
+3. 2023-02-02 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
+   (+ while loops; stars cube..)
 
-4. 2023-02-03 [JS homework 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-03_JS/index.html)
+4. 2023-02-03 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-03_JS/index.html)
+   (+ more while loops; coin flip..)

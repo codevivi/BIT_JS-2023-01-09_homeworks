@@ -25,12 +25,12 @@
           <div class="container">
             <nav class="nav page-nav">
               <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                <li class="nav-item"><a class="nav-link" href="#screenshot">Screenshot</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
-                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#screenshot">Screenshot</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#testimonials">Testimonial</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link section-link" href="#contact">Contact Us</a></li>
               </ul>
             </nav>
             <nav class="nav login-nav">
@@ -229,8 +229,8 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <section id="screenshot" class="screenshot section">
+      <div id="screenshot" class="container">
+        <section class="screenshot section">
           <div class="section-intro">
             <h2 class="section-title-1">App <strong>Screens</strong></h2>
             <h3 class="section-title-2">Awesome Screenshot</h3>
@@ -620,36 +620,6 @@
       </footer>
     </main>
 
-    <script>
-      const expandNavBtn = document.getElementById("expand-mobile-nav");
-      const navBoxExpanding = document.getElementById("expanding-nav-box");
-      const header = document.getElementById("header");
-      const headerBottom = header.getBoundingClientRect().bottom;
-      const goToTopBtn = document.getElementById("go-to-top-btn");
-      let debounceTimer;
-      expandNavBtn.addEventListener("click", expandNav);
-      window.addEventListener("scroll", onScroll);
-
-      function onScroll() {
-        if (debounceTimer) {
-          window.clearTimeout(debounceTimer);
-        }
-        debounceTimer = window.setTimeout(() => {
-          const scrollY = window.pageYOffset;
-          if (scrollY <= 0) {
-            header.classList.remove("on-scroll");
-            goToTopBtn.classList.add("hidden");
-          } else if (scrollY >= headerBottom) {
-            if (!header.classList.contains("on-scroll")) {
-              header.classList.add("on-scroll");
-              goToTopBtn.classList.remove("hidden");
-            }
-          }
-        }, 0);
-      }
-      function expandNav() {
-        header.classList.toggle("expanded");
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
