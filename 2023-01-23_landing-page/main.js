@@ -6,9 +6,11 @@ const header = document.getElementById("header");
 const headerBottom = header.getBoundingClientRect().bottom;
 const goToTopBtn = document.getElementById("go-to-top-btn");
 const sectionLinks = Array.from(document.querySelectorAll(".section-link"));
-const sectionElements = sectionLinks.map((link) => {
-  return document.querySelector(link.getAttribute("href").slice(indexOf("#")));
-});
+// const sectionElements = sectionLinks.map((link) => {
+//   return document.querySelector(link.getAttribute('href'));
+// });  ///////href gets long in github preview
+const sectionElements = Array.from(document.querySelectorAll(".linked-section"));
+
 const sectionTopsAndBottoms = sectionElements.map((el) => {
   //offsetTop is relative to parent;
   let top = el.offsetTop - headerBottom - 4;
