@@ -7,7 +7,7 @@ const headerBottom = header.getBoundingClientRect().bottom;
 const goToTopBtn = document.getElementById("go-to-top-btn");
 const sectionLinks = Array.from(document.querySelectorAll(".section-link"));
 const sectionElements = sectionLinks.map((link) => {
-  return document.querySelector(link.getAttribute("href"));
+  return document.querySelector(link.getAttribute("href").slice(indexOf("#")));
 });
 const sectionTopsAndBottoms = sectionElements.map((el) => {
   //offsetTop is relative to parent;
