@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" />
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Landing Page</title>
   </head>
 
@@ -24,12 +24,12 @@
           <div class="container">
             <nav class="nav page-nav">
               <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link section-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link section-link" href="#features">Features</a></li>
-                <li class="nav-item"><a class="nav-link section-link" href="#screenshot">Screenshot</a></li>
-                <li class="nav-item"><a class="nav-link section-link" href="#testimonials">Testimonial</a></li>
-                <li class="nav-item"><a class="nav-link section-link" href="#pricing">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link section-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="home" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="features" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="screenshot" href="#screenshot">Screenshot</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="testimonials" href="#testimonials">Testimonial</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="pricing" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" data-sectionid="contact" href="#contact">Contact Us</a></li>
               </ul>
             </nav>
             <nav class="nav login-nav">
@@ -47,7 +47,7 @@
       </div>
     </header>
     <main>
-      <section id="home" class="home linked-section">
+      <section id="home" class="home">
         <div class="container double-flex">
           <div class="double-flex-part">
             <h1>Best Way to Make Online Payments</h1>
@@ -117,7 +117,7 @@
           </ol>
         </div>
       </section>
-      <section id="features" class="features section linked-section">
+      <section id="features" class="features section">
         <div class="container">
           <div class="section-intro">
             <h2 class="section-title-1">Our <strong>features</strong></h2>
@@ -228,7 +228,7 @@
           </div>
         </div>
       </div>
-      <div id="screenshot" class="container linked-section">
+      <div id="screenshot" class="container">
         <section class="screenshot section">
           <div class="section-intro">
             <h2 class="section-title-1">App <strong>Screens</strong></h2>
@@ -267,7 +267,7 @@
           </div>
         </section>
       </div>
-      <section id="testimonials" class="section testimonials linked-section">
+      <section id="testimonials" class="section testimonials">
         <div class="container">
           <div class="section-intro">
             <h2 class="section-title-1">Our <strong>Testimonial</strong></h2>
@@ -293,7 +293,7 @@
           </div>
         </div>
       </section>
-      <section id="pricing" class="section pricing linked-section">
+      <section id="pricing" class="section pricing">
         <div class="container">
           <div class="section-intro">
             <h2 class="section-title-1">Our <strong>Pricing</strong></h2>
@@ -431,7 +431,7 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="section contact bg-coloured linked-section">
+      <section id="contact" class="section contact bg-coloured">
         <div class="container">
           <div class="section-intro">
             <h2 class="section-title-1">Our <strong>Contact Us</strong></h2>

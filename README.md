@@ -18,11 +18,11 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 ## HTML, CSS, **JavaScript**
 
-(check console logs)
-(+variables,data types)
+1. 2023-01-31 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html)
+   (+variables,data types)
 
 2. 2023-02-01 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-01_JS/index.html)
-   (check console logs)(+ conditionals)
+   (+ conditionals)
 
 3. 2023-02-02 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
    (+ while loops; stars cube..)

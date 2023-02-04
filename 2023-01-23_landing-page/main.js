@@ -5,17 +5,13 @@ const navBoxExpanding = document.getElementById("expanding-nav-box");
 const header = document.getElementById("header");
 const headerBottom = header.getBoundingClientRect().bottom;
 const goToTopBtn = document.getElementById("go-to-top-btn");
-const sectionLinks = Array.from(document.querySelectorAll(".section-link"));
-console.log(sectionLinks[1].getAttribute("href"));
-console.log(sectionLinks[1].href);
-// const sectionElements = sectionLinks.map((link) => {
-//   return document.querySelector(link.getAttribute('href'));
-// });  ///////href gets long in github preview
-const sectionElements = Array.from(document.querySelectorAll(".linked-section"));
-
+const sectionLinks = Array.from(document.querySelectorAll("a[data-sectionid]"));
+const sectionElements = sectionLinks.map((link) => {
+  return document.getElementById(link.dataset.sectionid);
+});
 const sectionTopsAndBottoms = sectionElements.map((el) => {
   //offsetTop is relative to parent;
-  let top = el.offsetTop - headerBottom - 4;
+  let top = el.offsetTop - header.offsetHeight - 2;
   let bottom = top + el.offsetHeight;
   return { top: top, bottom: bottom };
 });
@@ -40,6 +36,7 @@ function onScroll() {
 function setActiveLink() {
   let len = sectionElements.length;
   let linkIsAlreadyActive = false;
+
   for (let i = 0; i < len; i++) {
     if (scrollY >= sectionTopsAndBottoms[i].top && scrollY < sectionTopsAndBottoms[i].bottom) {
       if (activeLinkInd !== i) {
