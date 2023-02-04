@@ -10,6 +10,6 @@ HTML, CSS and a little bit of JS for responsive navigation and header effect.
 
 - [x] Fix bottom nav input hover effect, now it cuts word when wrapping.
 
-- [x] Add active class to nav links on scroll (JS)).
+- [] Add active class to nav links on scroll (JS)).still some issues, does not activate on load.Sometimes..
 
 - [ ] Try to implement image carousel functionality (JS).

@@ -6,6 +6,8 @@ const header = document.getElementById("header");
 const headerBottom = header.getBoundingClientRect().bottom;
 const goToTopBtn = document.getElementById("go-to-top-btn");
 const sectionLinks = Array.from(document.querySelectorAll(".section-link"));
+console.log(sectionLinks[1].getAttribute("href"));
+console.log(sectionLinks[1].href);
 // const sectionElements = sectionLinks.map((link) => {
 //   return document.querySelector(link.getAttribute('href'));
 // });  ///////href gets long in github preview
@@ -20,7 +22,7 @@ const sectionTopsAndBottoms = sectionElements.map((el) => {
 let activeLinkInd = null;
 
 setActiveLink();
-headerAnimation(window.scrollY);
+headerAnimation();
 
 expandNavBtn.addEventListener("click", expandNav);
 window.addEventListener("scroll", onScroll);
@@ -39,7 +41,6 @@ function setActiveLink() {
   let len = sectionElements.length;
   let linkIsAlreadyActive = false;
   for (let i = 0; i < len; i++) {
-    //if not already active
     if (scrollY >= sectionTopsAndBottoms[i].top && scrollY < sectionTopsAndBottoms[i].bottom) {
       if (activeLinkInd !== i) {
         if (activeLinkInd !== null) {
