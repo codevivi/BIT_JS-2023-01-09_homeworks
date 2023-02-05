@@ -11,14 +11,15 @@
   font-weight: 300;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-size: 16px;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-margin-top: 55px; /*same as header- to offset fixed heading when scrolling on link clik*/
+  /* scroll-margin-top: 55px; */
+  /*same as header- to offset fixed heading when scrolling on link clik*/
 }
 body {
   color: #6c757d;
