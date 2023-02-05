@@ -9,12 +9,7 @@ const sectionLinks = Array.from(document.querySelectorAll("a[data-sectionid]"));
 const sectionElements = sectionLinks.map((link) => {
   return document.getElementById(link.dataset.sectionid);
 });
-const sectionTopsAndBottoms = sectionElements.map((el) => {
-  //offsetTop is relative to parent;
-  let top = el.offsetTop - header.offsetHeight - 2;
-  let bottom = top + el.offsetHeight;
-  return { top: top, bottom: bottom };
-});
+
 let activeLinkInd = null;
 
 setActiveLink();
@@ -36,9 +31,18 @@ function onScroll() {
 function setActiveLink() {
   let len = sectionElements.length;
   let linkIsAlreadyActive = false;
-
+  // let sectionTopsAndBottoms = sectionElements.map((el) => {
+  //   //offsetTop is relative to parent;
+  //   let top = el.offsetTop - header.offsetHeight - 2;
+  //   let bottom = top + el.offsetHeight;
+  //   return { top: top, bottom: bottom };
+  // });
   for (let i = 0; i < len; i++) {
-    if (scrollY >= sectionTopsAndBottoms[i].top && scrollY < sectionTopsAndBottoms[i].bottom) {
+    let el = sectionElements[i];
+    let top = el.offsetTop - header.offsetHeight - 2;
+    let bottom = top + el.offsetHeight;
+    //if (scrollY >= sectionTopsAndBottoms[i].top && scrollY < sectionTopsAndBottoms[i].bottom) {
+    if (scrollY >= top && scrollY < bottom) {
       if (activeLinkInd !== i) {
         if (activeLinkInd !== null) {
           sectionLinks[activeLinkInd].classList.remove("active");
