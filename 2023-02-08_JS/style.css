@@ -65,7 +65,7 @@ li div {
   background-color: silver;
   border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
   position: absolute;
-  top: -85px;
+  top: -100%;
   margin: 0 20px;
   z-index: 1;
 }
@@ -81,6 +81,7 @@ li div {
   justify-content: center;
 }
 .nail::after {
+  /* nail head */
   content: "";
   width: 10px;
   height: 10px;
@@ -97,12 +98,21 @@ li div {
   height: 40px;
   background-color: slategray;
   border-radius: 92% 8% 86% 14% / 39% 100% 0% 61%;
-  top: -85px;
-  color: red;
+  top: -100%;
   left: -20px;
-  display: none;
   font-size: 1.8em;
   font-weight: bold;
+  color: red;
+  display: none;
+  transition: all 0.1s;
+}
+.stone.active {
+  top: -55px;
+  z-index: 100;
+}
+.stone.active.failure {
+  left: 5px;
+  top: -50px;
 }
 .nail.active > .stone {
   position: relative;
