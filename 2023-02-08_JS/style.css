@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2em;
+  margin: auto;
+  color: #969595;
+  background-color: #1b1b1b;
+}
+
+ol {
+  margin: auto;
+  text-align: left;
+  max-width: 1000px;
+}
+
+li {
+  padding: 1rem;
+}
+
+li div {
+  margin-top: 1rem;
+  position: relative;
+}
+.answer-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-btn {
+  padding: 0.5em;
+  margin-left: 2rem;
+  min-width: 70px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: green;
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.start-btn:hover,
+.start-btn:focus {
+  border: 1px solid greenyellow;
+}
+.board {
+  width: 100%;
+  height: 85px;
+  background-color: #463205;
+  margin-top: 200px;
+  position: relative;
+  padding: 0;
+  z-index: 10;
+}
+.nail {
+  width: 5px;
+  height: 85px;
+  background-color: silver;
+  border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+  position: absolute;
+  top: -85px;
+  margin: 0 20px;
+  z-index: 1;
+}
+.hit-counter {
+  color: greenyellow;
+  font-size: 2em;
+  border-radius: 50%;
+  border: 1px solid greenyellow;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nail::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(165, 164, 164);
+  position: absolute;
+  top: -5px;
+  left: -2.5px;
+  transform: skew(-9deg);
+}
+.stone {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  background-color: slategray;
+  border-radius: 92% 8% 86% 14% / 39% 100% 0% 61%;
+  top: -85px;
+  color: red;
+  left: -20px;
+  display: none;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.nail.active > .stone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left-text {
+  color: green;
+}
+.hit-text {
+  color: red;
+}
+.nail.active.action > .stone {
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="new Description" />
+    <meta name="keywords" content="list all keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>ND JS Feb 8</title>
+  </head>
+
+  <body>
+    <h1>JavaScript homework <small>2023-02-08</small></h1>
+    <ol>
+      <li>
+        Sumodeliuokite vinies kalimą. <br />
+        Įkalimo gylį sumodeliuokite pasinaudodami rand() funkcija.
+        <br />
+        Vinies ilgis 8.5cm (pilnai sulenda į lentą).
+
+        <ul>
+          <li>
+            a)“Įkalkite” 5 vinis mažais smūgiais. <br />
+            Vienas smūgis vinį įkala 5-20 mm.
+            <br />
+            Suskaičiuokite kiek reikia smūgių.
+            <div id="answer-a">
+              <div class="answer-header">
+                <p id="hit-counter-a" class="hit-counter"></p>
+                <button id="start-btn-a" class="start-btn" type="button">Pradėti Kalti</button>
+              </div>
+              <div id="board-a" class="board"></div>
+            </div>
+          </li>
+          <li>
+            b)“Įkalkite” 5 vinis dideliais smūgiais. Vienas smūgis vinį įkala 20-30 mm, bet yra 50% tikimybė (pasinaudokite rand() funkcija tikimybei sumodeliuoti), kad smūgis nepataikys į vinį. Suskaičiuokite kiek reikia smūgių.
+
+            <div id="answer-b">
+              <div class="answer-header">
+                <p id="hit-counter-b" class="hit-counter"></p>
+                <button id="start-btn-b" class="start-btn" type="button">Pradėti Kalti</button>
+              </div>
+              <div id="board-b" class="board"></div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <script src="./main.js"></script>
+  </body>
+</html>

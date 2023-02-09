@@ -29,3 +29,6 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 4. 2023-02-03 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-03_JS/index.html)
    (+ more while loops; coin flip..)
+
+5. 2023-02-08 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-08_JS/index.html)
+   (more JS basics)
