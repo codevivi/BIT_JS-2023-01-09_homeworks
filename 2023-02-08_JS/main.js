@@ -6,15 +6,21 @@ const counterElemA = document.getElementById("hit-counter-a");
 const buttonElemB = document.getElementById("start-btn-b");
 const boardElemB = document.getElementById("board-b");
 const counterElemB = document.getElementById("hit-counter-b");
+let running = false;
 
 buttonElemA.addEventListener("click", () => {
-  countLightHits(5, 85);
+  if (!running) {
+    countLightHits(5, 85);
+  }
 });
 
 buttonElemB.addEventListener("click", () => {
-  countHeavyHits(5, 85);
+  if (!running) {
+    countHeavyHits(5, 85);
+  }
 });
 async function countLightHits(nailsCount, nailLength) {
+  running = true;
   boardElemA.innerHTML = "";
   const hitMin = 5;
   const hitMax = 20;
@@ -43,8 +49,10 @@ async function countLightHits(nailsCount, nailLength) {
     el.style.top = `0px`;
     el.classList.remove("active");
   }
+  running = false;
 }
 async function countHeavyHits(nailsCount, nailLength) {
+  running = true;
   boardElemB.innerHTML = "";
   const hitMin = 20;
   const hitMax = 30;
@@ -77,6 +85,7 @@ async function countHeavyHits(nailsCount, nailLength) {
     el.style.top = `0px`;
     el.classList.remove("active");
   }
+  running = false;
 }
 
 function addNailElement(nth) {
