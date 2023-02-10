@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2em;
+  margin: auto;
+  color: #969595;
+  background-color: #1b1b1b;
+}
+h1 {
+  margin: 1em;
+}
+h1 > small {
+  font-size: 0.6em;
+}
+
+ol {
+  margin: auto;
+  text-align: left;
+  max-width: 1200px;
+}
+
+li {
+  padding: 1rem;
+}
+ul li {
+  list-style: lower-latin;
+}
+
+li p:last-child {
+  color: green;
+  padding: 1em;
+  overflow-x: scroll;
+  background-color: black;
+  margin: 0.5em 0;
+}
