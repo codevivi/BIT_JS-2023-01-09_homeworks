@@ -132,9 +132,18 @@ for (let i = 0; i < 200; i++) {
   sumArr.push(str);
 }
 console.log("sumARR", sumArr.length);
-//count unique combos
+//count all possible combos
+let differentCombinations = [];
+sumArr.forEach((str) => {
+  if (!differentCombinations.includes(str)) {
+    differentCombinations.push(str);
+  }
+});
+//
 
-document.getElementById("log5").innerHTML = `${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}<br/>Sudėtas masyvas:<br/> ${sumArr}<br/> Unique Combos:<br/> NOT YET<br/>`;
+document.getElementById(
+  "log5"
+).innerHTML = `${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}<br/><br/>Sudėtas masyvas:<br/> ${sumArr}<br/> <br/>Gauta ${differentCombinations.length} skirtingos kombinacijos ("unikaliios kombinacijos"):.<br/> ${differentCombinations}<br/><br/> Kombinacijos turinčios savyje bent vieną nepasikartojančią raidę: NOT YET `;
 ////////////////////////////////////////
 
 /// 6.
