@@ -33,5 +33,5 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 5. 2023-02-08 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-08_JS/index.html)
    (+for loops; nail hammering (with extra animation))
 
-6. 2023-02-10 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-10_JS/index.html)
+6. 2023-02-10 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-10_JS-arrays/index.html)
    (+arrays)
