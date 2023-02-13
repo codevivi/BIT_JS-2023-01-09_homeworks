@@ -145,17 +145,17 @@ for (let i = 0; i < 200; i++) {
   i++;
 }
 //count unique values
-let uniqueValues = []; //task do not require, but just to see if they are realy unique, could just use counter
+let uniqueCombos = []; //task do not require, but just to see if they are realy unique, could just use counter
 let copy = [...sumArr];
 sumArr.forEach((item, i) => {
   delete copy[i]; //delete item from copy array, and check if copy array has another same item;
-  if (!copy.indexOf(item)) {
+  if (copy.indexOf(item) <= 1) {
     //jei neturi ? issaugoti prie unique
-    uniqueValues.push(item);
+    uniqueCombos.push(item);
   }
 });
 
-log5Element.innerHTML = `<p>${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}</p> <p>Sudėtas masyvas:<br/> ${sumArr}<p/><br/><p>Unikalios reiksmes jame: ${uniqueValues.length}</p> <p>Unique Values:<br/> ${uniqueValues}</p>`;
+log5Element.innerHTML = `<p>${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}</p> <p>Sudėtas masyvas:<br/> ${sumArr}<p/><br/><p>Unikalios reiksmes jame: ${uniqueCombos.length}</p> <p>Unique Values:<br/> ${uniqueCombos}</p>`;
 ////////////////////////////////////////
 
 /// 6.
