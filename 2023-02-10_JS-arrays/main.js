@@ -149,7 +149,7 @@ let uniqueCombos = []; //task do not require, but just to see if they are realy 
 let copy = [...sumArr];
 sumArr.forEach((item, i) => {
   delete copy[i]; //delete item from copy array, and check if copy array has another same item;
-  if (copy.indexOf(item) <= 1) {
+  if (copy.indexOf(item) === -1) {
     //jei neturi ? issaugoti prie unique
     uniqueCombos.push(item);
   }
