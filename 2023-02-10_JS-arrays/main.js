@@ -4,7 +4,7 @@ let arr = [];
 while (arr.length < 30) {
   arr.push(rand(5, 25));
 }
-document.getElementById("log1").textContent = arr;
+document.getElementById("log1").innerHTML = `${arr}<br/>Jo ilgis:${arr.length}`;
 ////////////////////////////////////////
 
 /// 2a
@@ -116,14 +116,6 @@ document.getElementById("log4").textContent = `${letterArr}`;
 
 /// 5.
 ////////////////////////////////////////
-let log5Element = document.getElementById("log5");
-/////// this for some reason generates same random values for each array ????????
-// let multiArr = new Array(3).fill([]); //will store 3 letter arrays to one array
-// multiArr.forEach((arr) => {
-//   while (arr.length < 200) {
-//     arr.push(String.fromCharCode(rand(65, 68)));
-//   }
-// });
 let multiArr = []; //will store 3 randmom letters arrays
 for (let i = 0; i < 3; i++) {
   let arr = [];
@@ -132,29 +124,17 @@ for (let i = 0; i < 3; i++) {
   }
   multiArr.push(arr);
 }
+
 //sum multiple array values by index
 let sumArr = [];
 for (let i = 0; i < 200; i++) {
-  let currentArrInd = multiArr.length - 1;
-  let indSum = "";
-  while (currentArrInd >= 0) {
-    indSum += multiArr[currentArrInd][i];
-    currentArrInd--;
-  }
-  sumArr.push(indSum);
-  i++;
+  let str = multiArr[0][i] + multiArr[1][i] + multiArr[2][i];
+  sumArr.push(str);
 }
+console.log("sumARR", sumArr.length);
 //count unique combos
-let uniqueCombos = []; //task do not require, but just to see if they are realy unique, could just use counter
-let copy = [...sumArr];
-sumArr.forEach((item, i) => {
-  delete copy[i]; //delete item from copy array, and check if copy array has another same item;
-  if (copy.indexOf(item) === -1) {
-    uniqueCombos.push(item);
-  }
-});
 
-log5Element.innerHTML = `<p>${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}</p> <p>Sudėtas masyvas:<br/> ${sumArr}<p/><br/><p>Unikalios reiksmes jame: ${uniqueCombos.length}</p> <p>Unique Values:<br/> ${uniqueCombos}</p>`;
+document.getElementById("log5").innerHTML = `${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}<br/>Sudėtas masyvas:<br/> ${sumArr}<br/> Unique Combos:<br/> NOT YET<br/>`;
 ////////////////////////////////////////
 
 /// 6.
