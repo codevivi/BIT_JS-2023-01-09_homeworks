@@ -139,11 +139,18 @@ sumArr.forEach((str) => {
     differentCombinations.push(str);
   }
 });
-//
+
+let mixedLetterCombosCount = 0;
+
+sumArr.forEach((str) => {
+  if (str !== "AAA" && str !== "BBB" && str !== "CCC" && str !== "DDD") {
+    mixedLetterCombosCount++;
+  }
+});
 
 document.getElementById(
   "log5"
-).innerHTML = `${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}<br/><br/>Sudėtas masyvas:<br/> ${sumArr}<br/> <br/>Gauta ${differentCombinations.length} skirtingos kombinacijos ("unikaliios kombinacijos"):.<br/> ${differentCombinations}<br/><br/> Kombinacijos turinčios savyje bent vieną nepasikartojančią raidę: NOT YET `;
+).innerHTML = `${multiArr[0]}<br/>${multiArr[1]}<br/>${multiArr[2]}<br/><br/>Sudėtas masyvas:<br/> ${sumArr}<br/> <br/>Gautos ${mixedLetterCombosCount} kombinacijos,sudarytas NE iš vienos(tos pačios) reikšmės<br/><br/>ir<br/><br/>${differentCombinations.length} skirtingos kombinacijos ("unikaliios kombinacijos"):.<br/> ${differentCombinations}<br/>`;
 ////////////////////////////////////////
 
 /// 6.
