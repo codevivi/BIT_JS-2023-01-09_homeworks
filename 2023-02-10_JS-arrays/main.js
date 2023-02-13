@@ -94,10 +94,18 @@ document.getElementById("log2i").textContent = arr;
 /// 3.
 ////////////////////////////////////////
 let letterArr = [];
+let letterCount = {
+  A: 0,
+  B: 0,
+  C: 0,
+  D: 0,
+};
 while (letterArr.length < 200) {
-  letterArr.push(String.fromCharCode(rand(65, 68)));
+  let randomLetter = String.fromCharCode(rand(65, 68));
+  letterCount[randomLetter]++;
+  letterArr.push(randomLetter);
 }
-document.getElementById("log3").innerHTML = `${letterArr} <br> Ilgis: ${letterArr.length}`;
+document.getElementById("log3").innerHTML = `${letterArr} <br> Ilgis: ${letterArr.length}<br/> A: ${letterCount.A}<br/>B: ${letterCount.B}<br/>C:${letterCount.C}<br/>D:${letterCount.D}`;
 ////////////////////////////////////////
 
 /// 4.
