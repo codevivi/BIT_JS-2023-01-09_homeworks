@@ -144,13 +144,12 @@ for (let i = 0; i < 200; i++) {
   sumArr.push(indSum);
   i++;
 }
-//count unique values
+//count unique combos
 let uniqueCombos = []; //task do not require, but just to see if they are realy unique, could just use counter
 let copy = [...sumArr];
 sumArr.forEach((item, i) => {
   delete copy[i]; //delete item from copy array, and check if copy array has another same item;
   if (copy.indexOf(item) === -1) {
-    //jei neturi ? issaugoti prie unique
     uniqueCombos.push(item);
   }
 });
