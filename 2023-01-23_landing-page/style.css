@@ -664,8 +664,9 @@ img {
   .stats .column {
     /* display: flex; */
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: center; */
     gap: 1em;
     flex: 1;
   }
@@ -698,21 +699,22 @@ img {
     font-size: 1.7em;
   }
   .stat-count {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: -0.1em;
   }
   .stat-text {
-    padding-top: 2.2em;
+    padding-top: 0.2em;
   }
 }
 /* //////////////////STATS Ends */
 /* //////////////////SCREENSHOT Starts */
-.slider-wrapper {
+.carousel-wrapper {
   width: 100%;
   width: auto;
   position: relative;
 }
-.images-slider {
+
+.carousel {
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -722,38 +724,42 @@ img {
   margin-top: -1rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  position: relative;
 }
 
-.slider-img-wrapper {
+.slider {
   width: 200px;
   min-width: 200px;
   border-radius: 10px;
+  transition: all 1s;
 }
-.slider-img-wrapper:first-child,
-.slider-img-wrapper:nth-child(5) {
+
+.slider:first-child,
+.slider:nth-child(5) {
   opacity: 0.3;
 }
 
-.slider-img-wrapper:nth-child(2),
-.slider-img-wrapper:nth-child(4) {
+.slider:nth-child(2),
+.slider:nth-child(4) {
   opacity: 0.7;
 }
-.slider-img-wrapper img {
+.slider img {
   width: 100%;
   min-width: 100%;
   display: block;
   border: 1px solid rgba(121, 125, 125, 0.08);
   border-radius: 10px;
+  transition: all 1s;
 }
-.slider-img-wrapper-center {
+.slider:nth-child(3) {
   min-width: 230px;
 }
-.slider-img-wrapper-center img {
+.slider:nth-child(3) img {
   object-fit: cover;
-  position: relative;
   box-shadow: 0 5px 20px 5px rgba(121, 125, 125, 0.1);
 }
-.hidden-slide {
+
+.slider:last-child {
   display: none;
 }
 .slider-buttons-wrapper {
@@ -786,17 +792,18 @@ img {
   overflow: hidden;
   background-color: #d1defa;
   border: 2px solid white;
+  pointer-events: none;
 }
 .slider-button-active span {
   background-color: #1057ea;
 }
 
 @media screen and (min-width: 1200px) {
-  .slider-img-wrapper {
+  .slider {
     width: 247px;
     min-width: 247px;
   }
-  .slider-img-wrapper-center {
+  .slider:nth-child(3) {
     min-width: 271px;
   }
 }
