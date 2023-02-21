@@ -5,6 +5,8 @@ P.S. kursiokams ir ne tik:
 Visada dėkinga už bugų, pievų pastebėjimus mano kode.
 Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
+⚠️ Some projects will be in separate repositories and I will only post links to them in there.
+
 ## **HTML, CSS**
 
 1. 2023-01-10 [Periodinė elementų lentelė 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-10_html-periodine-elementu-lentele/index.html)
@@ -25,13 +27,15 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
    (+ conditionals)
 
 3. 2023-02-02 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-02_JS/index.html)
-   (+ while loops; stars cube..)
+   (+ while loops; **stars cube**..)
 
 4. 2023-02-03 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-03_JS/index.html)
-   (more while loops; coin flip..)
+   (more while loops; **coin flip**..)
 
 5. 2023-02-08 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-08_JS/index.html)
-   (+for loops; nail hammering (with extra animation))
+   (+for loops; **nail hammering** (with extra animation))
 
 6. 2023-02-10 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-10_JS-arrays/index.html)
    (+arrays)
+
+7. 2023-02-20 [Mini JS game- catch a square 🌐](https://codevivi.github.io/catch-square-game/) [Link to code 📂](https://github.com/codevivi/catch-square-game)
