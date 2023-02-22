@@ -39,3 +39,7 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
    (+arrays)
 
 7. 2023-02-20 [Mini JS game- catch a square 🌐](https://codevivi.github.io/catch-square-game/) [Link to code 📂](https://github.com/codevivi/catch-square-game)
+
+8. 2023-02-21 [Timer 🌐](https://codevivi.github.io/timer/) [Link to code 📂](https://github.com/codevivi/timer)
+
+9. 2023-02-22 [Using Dog Api 🌐](https://codevivi.github.io/using-api/) [Link to code 📂](https://github.com/codevivi/using-api)
