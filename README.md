@@ -43,3 +43,5 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 8. 2023-02-21 [Timer 🌐](https://codevivi.github.io/timer/) [Link to code 📂](https://github.com/codevivi/timer)
 
 9. 2023-02-22 [Using Dog Api 🌐](https://codevivi.github.io/using-api/) [Link to code 📂](https://github.com/codevivi/using-api)
+
+10. 2023-02-28 [Using Api- Random user card 🌐](https://codevivi.github.io/using-api-random-user-card/) [Link to code 📂](https://github.com/codevivi/using-api-random-user-card)
