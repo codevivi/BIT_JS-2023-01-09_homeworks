@@ -49,3 +49,5 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 11. 2023-03-02 [Using Api- Cocktail list 🌐](https://codevivi.github.io/using-api-cocktails/) [Link to code 📂](https://github.com/codevivi/using-api-cocktails)
 
 12. 2023-03-07 **LT flag and matrix-rain** in terminal with nodejs [Link to code 📂](https://github.com/codevivi/terminal-flag-and-matrix-rain)
+
+13. 2023-03-10 **Saving data to file** terminal application with nodejs [Link to code 📂](https://github.com/codevivi/saving-data-to-file)
