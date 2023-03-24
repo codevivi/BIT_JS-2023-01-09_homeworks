@@ -52,4 +52,10 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 13. 2023-03-10 **Saving data to file** terminal application with nodejs [Link to code 📂](https://github.com/codevivi/saving-data-to-file)
 
-14. 2023-03-17 **Admin login save users** timed workshop, learning express routing [Link to code 📂](https://github.com/codevivi/admin-login-add-users)
+14. 2023-03-17 **Admin login save users** workshop, learning express routing [Link to code 📂](https://github.com/codevivi/admin-login-add-users) (currently code was changed and extended with more functionality)
+
+15. 2023-03-20 **Three item shop** workshop, learning express routing with parameters [Link to code 📂](https://github.com/codevivi/express-3-item-shop)
+
+16. 2023-03-22 **Admin, extend code further** workshop, edit, delete user [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
+
+17. 2023-03-24 **Admin, extend code further** ratings, sort gallery [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
