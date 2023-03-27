@@ -18,7 +18,7 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 1. 2023-01-30 [Shopping Cart 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-30_shopping-cart/index.html)
 
-## HTML, CSS, **JavaScript**
+## HTML, CSS, Bootstrap, **JavaScript**
 
 1. 2023-01-31 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-31_JS/index.html)
    (+variables,data types)
@@ -48,16 +48,18 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 11. 2023-03-02 [Using Api- Cocktail list 🌐](https://codevivi.github.io/using-api-cocktails/) [Link to code 📂](https://github.com/codevivi/using-api-cocktails)
 
-12. 2023-03-07 **LT flag and matrix-rain** in terminal with nodejs [Link to code 📂](https://github.com/codevivi/terminal-flag-and-matrix-rain)
+## HTML, CSS, Bootstrap, JavaScript, **nodejs & express**
 
-13. 2023-03-10 **Saving data to file** terminal application with nodejs [Link to code 📂](https://github.com/codevivi/saving-data-to-file)
+1. 2023-03-07 **LT flag and matrix-rain** in terminal with nodejs [Link to code 📂](https://github.com/codevivi/terminal-flag-and-matrix-rain)
 
-14. 2023-03-17 **Admin login save users** workshop, learning express routing [Link to code 📂](https://github.com/codevivi/admin-login-add-users) (currently code was changed and extended with more functionality)
+2. 2023-03-10 **Saving data to file** terminal application with nodejs [Link to code 📂](https://github.com/codevivi/saving-data-to-file)
 
-15. 2023-03-20 **Three item shop** workshop, learning express routing with parameters [Link to code 📂](https://github.com/codevivi/express-3-item-shop)
+3. 2023-03-17 **Admin login save users** workshop, learning express routing [Link to code 📂](https://github.com/codevivi/admin-login-add-users) (currently code was changed and extended with more functionality)
 
-16. 2023-03-22 **Admin, extend code further** workshop, edit, delete user [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
+4. 2023-03-20 **Three item shop** workshop, learning express routing with parameters [Link to code 📂](https://github.com/codevivi/express-3-item-shop)
 
-17. 2023-03-24 **Admin, extend code further** ratings, sort gallery [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
+5. 2023-03-22 **Admin, extend code further** workshop, edit, delete user [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
 
-18. 2023-03-27 **website search** workshop, login, add websites to json db, search for a website [Link to code 📂](https://github.com/codevivi/website-search)
+6. 2023-03-24 **Admin, extend code further** ratings, sort gallery [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
+
+7. 2023-03-27 **website search** workshop, login, add websites to json db, search for a website [Link to code 📂](https://github.com/codevivi/website-search)
