@@ -59,3 +59,5 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 16. 2023-03-22 **Admin, extend code further** workshop, edit, delete user [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
 
 17. 2023-03-24 **Admin, extend code further** ratings, sort gallery [Link to code 📂](https://github.com/codevivi/administratorius-extend-given-code)
+
+18. 2023-03-27 **website search** workshop, login, add websites to json db, search for a website [Link to code 📂](https://github.com/codevivi/website-search)
