@@ -7,6 +7,8 @@ Taip pat, jei norit kažką pasiaiškinti, rašykit man į teamsus ar discordą.
 
 ⚠️ Some projects will be in separate repositories and I will only post links to them in there.
 
+Assignment listed in [there](https://github.com/codevivi/BIT_JS-2023-01-09_friday-assignments)
+
 ## **HTML, CSS**
 
 1. 2023-01-10 [Periodinė elementų lentelė 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-01-10_html-periodine-elementu-lentele/index.html)
