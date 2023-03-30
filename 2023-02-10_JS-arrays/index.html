@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="lt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="new Description" />
-    <meta name="keywords" content="list all keywords" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
 
-    <title>ND JS Feb 10</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="new Description" />
+  <meta name="keywords" content="list all keywords" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <body>
-    <h1>JavaScript homework <small>2023-02-10</small></h1>
+  <title>ND JS Feb 10</title>
+</head>
 
-    <ol>
-      <li>
-        <p>Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.</p>
-        <p id="log1"></p>
-      </li>
-      <li>
-        <p>Naudodamiesi 1 uždavinio masyvu:</p>
-        <ul>
-          <li>
-            <p>Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;</p>
-            <p id="log2a"></p>
-          </li>
-          <li>
-            <p>Raskite didžiausią masyvo reikšmę ir jos indeksą arba indeksus jeigu yra keli;</p>
-            <p id="log2b"></p>
-          </li>
-          <li>
-            <p>Suskaičiuokite visų porinių (lyginių) indeksų reikšmių sumą;<br /><span class="notes">Nulį skaitysiu kaip porinį, nes padalinus dviems liekana 0, taigi sumuosiu reikšmes esančias indeksuose: 0, 2, 4, 6...</span></p>
-            <p id="log2c"></p>
-          </li>
-          <li>
-            <p>Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;</p>
-            <p id="log2d"></p>
-          </li>
-          <li>
-            <p>Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;</p>
-            <p id="log2e"></p>
-          </li>
-          <li>
-            <p>Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indeksų reikšmių, o kitas iš porinių;</p>
-            <p id="log2f"></p>
-          </li>
-          <li>
-            <p>Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;</p>
-            <p id="log2g"></p>
-          </li>
-          <li>
-            <p>Suraskite pirmą indeksą, kurio elemento reikšmė didesnė už 10;</p>
-            <p id="log2h"></p>
-          </li>
-          <li>
-            <p>Iš masyvo ištrinkite visus elementus turinčius porinį indeksą;</p>
-            <p id="log2i"></p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 200. Suskaičiuokite kiek yra kiekvienos raidės.</p>
-        <p id="log3"></p>
-      </li>
-      <li>
-        <p>Išrūšiuokite 3 uždavinio masyvą pagal abecėlę.</p>
-        <p id="log4"></p>
-      </li>
-      <li>
-        <p>
-          Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami reiksmes pagal atitinkamus indeksus. Paskaičiuokite kiek unikalių (po vieną, nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.<br />
-          <span class="notes"
-            >Pagal matyta sprendimą sau susiformuluočiau:<br />
-            Suskaičiuokite visas kombinacijas,sudarytas NE iš vienos(tos pačios) reikšmės(raidės) ir kiek skirtingų kombinacijų gavote.</span
-          >
-        </p>
-        <p id="log5"></p>
-      </li>
-      <li>
-        <p>Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999. Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve (t.y. neturi kartotis).</p>
-        <p id="log6"></p>
-      </li>
-      <li>
-        <p>Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 6 uždavinio masyve, bet nėra antrame 6 uždavinio masyve.</p>
-        <p id="log7"></p>
-      </li>
-      <li>
-        <p>Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 6 uždavinio masyvuose.</p>
-        <p id="log8"></p>
-      </li>
-      <li>
-        <p>Sugeneruokite masyvą, kurio indeksus sudarytų pirmo 6 uždavinio masyvo reikšmės, o jo reikšmės būtų iš antrojo masyvo.</p>
-        <p id="log9"></p>
-      </li>
-      <li>
-        <p>Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.</p>
-        <p id="log10"></p>
-      </li>
-    </ol>
-    <script src="./main.js"></script>
-  </body>
+<body>
+  <h1>JavaScript homework <small>2023-02-10</small></h1>
+
+  <ol>
+    <li>
+      <p>Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.</p>
+      <p id="log1"></p>
+    </li>
+    <li>
+      <p>Naudodamiesi 1 uždavinio masyvu:</p>
+      <ul>
+        <li>
+          <p>Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;</p>
+          <p id="log2a"></p>
+        </li>
+        <li>
+          <p>Raskite didžiausią masyvo reikšmę ir jos indeksą arba indeksus jeigu yra keli;</p>
+          <p id="log2b"></p>
+        </li>
+        <li>
+          <p>Suskaičiuokite visų porinių (lyginių) indeksų reikšmių sumą;<br /><span class="notes">Nulį skaitysiu kaip porinį, nes padalinus dviems liekana 0, taigi sumuosiu reikšmes esančias indeksuose: 0, 2, 4, 6...</span></p>
+          <p id="log2c"></p>
+        </li>
+        <li>
+          <p>Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;</p>
+          <p id="log2d"></p>
+        </li>
+        <li>
+          <p>Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;</p>
+          <p id="log2e"></p>
+        </li>
+        <li>
+          <p>Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indeksų reikšmių, o kitas iš porinių;</p>
+          <p id="log2f"></p>
+        </li>
+        <li>
+          <p>Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;</p>
+          <p id="log2g"></p>
+        </li>
+        <li>
+          <p>Suraskite pirmą indeksą, kurio elemento reikšmė didesnė už 10;</p>
+          <p id="log2h"></p>
+        </li>
+        <li>
+          <p>Iš masyvo ištrinkite visus elementus turinčius porinį indeksą;</p>
+          <p id="log2i"></p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 200. Suskaičiuokite kiek yra kiekvienos raidės.</p>
+      <p id="log3"></p>
+    </li>
+    <li>
+      <p>Išrūšiuokite 3 uždavinio masyvą pagal abecėlę.</p>
+      <p id="log4"></p>
+    </li>
+    <li>
+      <p>
+        Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami reiksmes pagal atitinkamus indeksus. Paskaičiuokite kiek unikalių (po vieną, nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.<br />
+        <span class="notes">Pagal matyta sprendimą sau susiformuluočiau:<br />
+          Suskaičiuokite visas kombinacijas,sudarytas NE iš vienos(tos pačios) reikšmės(raidės) ir kiek skirtingų kombinacijų gavote.</span>
+      </p>
+      <p id="log5"></p>
+    </li>
+    <li>
+      <p>Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999. Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve (t.y. neturi kartotis).</p>
+      <p id="log6"></p>
+    </li>
+    <li>
+      <p>Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 6 uždavinio masyve, bet nėra antrame 6 uždavinio masyve.</p>
+      <p id="log7"></p>
+    </li>
+    <li>
+      <p>Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 6 uždavinio masyvuose.</p>
+      <p id="log8"></p>
+    </li>
+    <li>
+      <p>Sugeneruokite masyvą, kurio indeksus sudarytų pirmo 6 uždavinio masyvo reikšmės, o jo reikšmės būtų iš antrojo masyvo.</p>
+      <p id="log9"></p>
+    </li>
+    <li>
+      <p>Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.</p>
+      <p id="log10"></p>
+    </li>
+  </ol>
+  <!-- <script src="./main.js"></script> -->
+  <script src="./one-liners.js"></script>
+</body>
+
 </html>

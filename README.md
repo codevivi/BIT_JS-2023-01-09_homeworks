@@ -37,7 +37,7 @@ Assignment listed in [there](https://github.com/codevivi/BIT_JS-2023-01-09_frida
 5. 2023-02-08 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-08_JS/index.html)
    (+for loops; **nail hammering** (with extra animation))
 
-6. 2023-02-10 [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-10_JS-arrays/index.html)
+6. 2023-02-10 & 30-03-2023 **modified with one liners** [JS 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-02-10_JS-arrays/index.html)
    (+arrays)
 
 7. 2023-02-20 [Mini JS game- catch a square 🌐](https://codevivi.github.io/catch-square-game/) [Link to code 📂](https://github.com/codevivi/catch-square-game)
