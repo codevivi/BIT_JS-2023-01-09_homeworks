@@ -1,4 +1,4 @@
-# JS homework **2023-02-10**
+# JS homework **2023-02-10 & 2023-03-30 one liners** (masyvai basic)
 
 ## Arrays
 
