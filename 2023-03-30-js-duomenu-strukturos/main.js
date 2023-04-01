@@ -1,4 +1,24 @@
 // Duomenų struktūros
+// Sukurti 100 sąskaitų masyvą.
+// Kiekviena sąskaita yra objektas ir turi po 5 savybes:
+
+// number: pagal taisykle INV001, INV002, … INV099, INV100;
+// products: masyvas random ilgio nuo 1 iki 10;
+// products masyvo elementai objektai, turintys po 4 savybes:
+// title: random iš products masyvo (vienoje sąskaitoje gali būti keli vienodi produktai. Vistiek jų kainos bus skirtingos);
+// price: random skaičius su kableliu nuo 1.00 iki 100.00;
+// amount: random skaičius nuo 1 iki 20;
+// total:  price ir amount sandauga.
+// total: visų products masyvo elementų total suma
+// vat: 21% nuo total
+// grandTotal: vat ir total suma
+
+// Sugeneruotame (ne generavimo metu!) masyve paskaičiuoti ir konsolėje atspausdinti visų sąskaitų grandTotal sumą, produktų sąrašą prie kiekvieno produkto pavadinimo pridedant koks to produkto kiekis yra visose sąskaitose bendrai ir už kokią bendrą sumą.
+// Pvz:
+// Dviratis 35 479.55
+// Triratis 10 457.22
+// …..
+// Medinė dėžė 47 1025.74
 
 const products = [
   "Dviratis",
@@ -61,36 +81,11 @@ class Saskaita {
   }
 }
 
-// Sukurti 100 sąskaitų masyvą.
-
 const simtasSaskaitu = [...Array(100)].map((_) => new Saskaita());
-console.log(simtasSaskaitu);
-
-document.getElementById("log1").innerHTML = `${JSON.stringify(simtasSaskaitu, null, 4)}`;
-
-// Kiekviena sąskaita yra objektas ir turi po 5 savybes:
-
-// number: pagal taisykle INV001, INV002, … INV099, INV100;
-// products: masyvas random ilgio nuo 1 iki 10;
-// products masyvo elementai objektai, turintys po 4 savybes:
-// title: random iš products masyvo (vienoje sąskaitoje gali būti keli vienodi produktai. Vistiek jų kainos bus skirtingos);
-// price: random skaičius su kableliu nuo 1.00 iki 100.00;
-// amount: random skaičius nuo 1 iki 20;
-// total:  price ir amount sandauga.
-// total: visų products masyvo elementų total suma
-// vat: 21% nuo total
-// grandTotal: vat ir total suma
-
-// Sugeneruotame (ne generavimo metu!) masyve paskaičiuoti ir konsolėje atspausdinti visų sąskaitų grandTotal sumą, produktų sąrašą prie kiekvieno produkto pavadinimo pridedant koks to produkto kiekis yra visose sąskaitose bendrai ir už kokią bendrą sumą.
-// Pvz:
-// Dviratis 35 479.55
-// Triratis 10 457.22
-// …..
-// Medinė dėžė 47 1025.74
 
 const visuSaskaituSuma = simtasSaskaitu.reduce((acc, curr) => curr.grandTotal + acc, 0).toFixed(2);
-const productsListing = products.map((name) => ({ name, amount: 0, total: 0 }));
 
+const productsListing = products.map((name) => ({ name, amount: 0, total: 0 }));
 simtasSaskaitu.forEach((saskaita) => {
   saskaita.products.forEach((product) => {
     let listingProduct = productsListing.find((item) => item.name === product.title);
@@ -100,11 +95,20 @@ simtasSaskaitu.forEach((saskaita) => {
   });
 });
 
-const log2Element = document.getElementById("log2");
+///////loging answers
+//////log simtas saskaitu
+console.log(simtasSaskaitu);
+document.getElementById("log1").innerHTML = `${JSON.stringify(simtasSaskaitu, null, 4)}`;
+//////log
+//////log visu saskaitu suma
 console.log(`Visu saskaitu grandTotal suma: ${visuSaskaituSuma}`);
 log2Element.innerHTML = `Visu saskaitu grandTotal suma: ${visuSaskaituSuma}`;
+//////log
+//////log products listing
+const log2Element = document.getElementById("log2");
 productsListing.forEach((item) => {
   let str = `${item.name} ${item.amount} ${item.total}`;
   console.log(str);
   log2Element.innerHTML += `<p>${str}</p>`;
 });
+//////log
