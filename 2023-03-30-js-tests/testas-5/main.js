@@ -1,9 +1,39 @@
 "use strict";
-function rand(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min);
+
+const colorInput = document.querySelector("#color");
+const numberInput = document.querySelector("#number");
+const addBtn = document.querySelector("#add");
+const deleteBtn = document.querySelector("#delete");
+const stageEl = document.querySelector(".stage");
+addBtn.addEventListener("click", sukurtiNauja);
+deleteBtn.addEventListener("click", istrinti);
+
+const balls = [];
+
+class ColorBall {
+  constructor(color, number) {
+    this.color = color;
+    this.number = number;
+  }
 }
+
+function sukurtiNauja() {
+  if (colorInput.value && numberInput.value) {
+    balls.push(new ColorBall(colorInput.value, numberInput.value));
+    stageEl.innerHTML = "";
+    balls.forEach((ball) => (stageEl.innerHTML += `<div class='ball' style="background-color: ${ball.color}">${ball.number}</div>`));
+  }
+}
+
+function istrinti() {
+  if (balls.length > 0) {
+    let el = stageEl.querySelector("div:first-child");
+    balls.unshift();
+    stageEl.removeChild(el);
+  }
+}
+
+//19.16
 // Reikalavimui JS kodui: turi būti sukurtas masyvas balls ir klasė ColorBall.
 
 // Reikalavimui HTML: turi būti sukurti du laukeliai duomenims įvesti- spalvai ir

@@ -6,11 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testas #5</title>
+    <style>
+        .ball {
+            border-radius: 50%;
+            padding: 1em;
+            font-weight: bold;
+            width: 4rem;
+            height: 4rem;
+            color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .stage {
+            display: inline-flex;
+        }
+
+        .form {
+            margin: 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 300px;
+        }
+
+        button {
+            padding: 0.5em;
+        }
+
+        input[type='number'] {
+            width: 4em;
+            padding: 0.5em;
+        }
+
+        .form div {
+            display: inline-flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2em;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Testas #5</h1>
     <a href="./../index.html">Atgal</a>
+
+    <div class="form">
+        <div>
+            <label>
+                Spalva
+                <input id="color" type="color">
+            </label>
+            <label>
+                Skaičius
+                <input id="number" type="number">
+            </label>
+        </div>
+        <div>
+            <button id="add">Sukurti naują</button>
+            <button id="delete">Ištrinti seniausią</button>
+        </div>
+    </div>
+    <div class="stage"></div>
+
 
 </body>
 <script src="main.js"></script>
