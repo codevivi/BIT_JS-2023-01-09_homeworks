@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="new Description" />
+  <meta name="keywords" content="list all keywords" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <title>Duomenu strukturos ND</title>
+</head>
+
+<body>
+  <h1>JavaScript namų darbai - Duomenų struktūros<small> 2023-03-30 </small></h1>
+
+  <ol>
+    <li>
+      <p>Sukurti 100 sąskaitų masyvą.</p>
+      <p>Kiekviena sąskaita yra objektas ir turi po 5 savybes:</p>
+      <ul>
+        <li>
+          number: pagal taisykle INV001, INV002, … INV099, INV100;
+        </li>
+        <li>
+          <p>
+            products: masyvas random ilgio nuo 1 iki 10;
+          </p>
+          <p>
+            products masyvo elementai objektai, turintys po 4 savybes:
+          </p>
+          <ul>
+            <li>
+              title: random iš products masyvo (vienoje sąskaitoje gali būti
+            </li>
+
+            <li>
+              price: random skaičius su kableliu nuo 1.00 iki 100.00;
+            </li>
+            <li>
+              amount: random skaičius nuo 1 iki 20;
+            </li>
+            <li>
+              total: price ir amount sandauga.
+            </li>
+          </ul>
+        </li>
+        <li>
+          total: visų products masyvo elementų total suma
+        </li>
+        <li>
+          vat: 21% nuo total
+        </li>
+        <li>
+          grandTotal: vat ir total suma
+        </li>
+      </ul>
+
+      <p>Rezultatas rodomas su JSON.stringify:</p>
+      <pre id="log1">
+      </pre>
+    </li>
+    <li>
+      <p>Sugeneruotame (ne generavimo metu!) masyve paskaičiuoti ir konsolėje atspausdinti visų sąskaitų grandTotal sumą, produktų sąrašą prie kiekvieno produkto pavadinimo pridedant koks to produkto kiekis yra visose sąskaitose bendrai ir už kokią bendrą sumą.</p>
+      <p id="log2"></p>
+    </li>
+  </ol>
+  <script src="./main.js"></script>
+</body>
+
+</html>

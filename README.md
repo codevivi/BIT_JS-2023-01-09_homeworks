@@ -71,3 +71,5 @@ Assignment listed in [there](https://github.com/codevivi/BIT_JS-2023-01-09_frida
 1. 2023-03-30 **Masyvai basic** (dauguma buvo perdaryti užrašant viena eilute ) [Link to code 📂](https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/tree/master/2023-02-10_JS-arrays)
 
 2. 2023-03-30 **Masyvai** [result preview 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-03-30-js-arrays2/index.html)
+
+3. 2023-03-30 **Duomenų struktūros** [result preview 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-03-30-js-duomenu-strukturos/index.html)
