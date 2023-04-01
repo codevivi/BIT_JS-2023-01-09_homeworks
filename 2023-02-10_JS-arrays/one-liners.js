@@ -131,31 +131,37 @@ document.getElementById("log6").innerHTML = `${randomUnique1}<br/> ${randomUniqu
 // arba;
 let diffArr = randomUnique1.filter((num) => !randomUnique2.includes(num));
 
+console.log(diffArr, "task 7");
 document.getElementById("log7").innerHTML = `${diffArr}<br/> jo ilgis: ${diffArr.length}`;
 
 /// 8. Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 6 uždavinio masyvuose.
 let repeatArr = randomUnique1.filter((num) => randomUnique2.indexOf(num) >= 0);
+
+console.log(repeatArr, "task 8");
 document.getElementById("log8").innerHTML = `${repeatArr}<br/> jo ilgis: ${repeatArr.length}`;
 
 /// 9.Sugeneruokite masyvą, kurio indeksus sudarytų pirmo 6 uždavinio masyvo reikšmės, o jo reikšmės būtų iš antrojo masyvo.
 //nezinau kaip trumpiau, viena eilute..
 let mutantArr = [];
-randomUnique1.forEach((num, i) => {
-  mutantArr[num] = randomUnique2[i];
-});
+randomUnique1.forEach((num, i) => (mutantArr[num] = randomUnique2[i]));
 
+console.log(mutantArr, "task 9");
 document.getElementById("log9").innerHTML = `${mutantArr}<br/>Jo ilgis:${mutantArr.length}`;
 
 /// 10.Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma. Ketvirtas- antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.
-////nezinau kaip viena eilute..
+////nezinau kaip viena eilute.. nebent dviem..
+
 let strangeArr = [];
-while (strangeArr.length < 10) {
-  if (strangeArr.length < 2) {
-    strangeArr.push(Math.floor(Math.random() * (25 - 5 + 1) + 5));
-  } else {
-    let prev = strangeArr[strangeArr.length - 1];
-    let prevPrev = strangeArr[strangeArr.length - 2];
-    strangeArr.push(prev + prevPrev);
-  }
-}
+[...Array(10)].forEach((_, ind) => (ind < 2 ? strangeArr.push(Math.floor(Math.random() * (25 - 5 + 1) + 5)) : strangeArr.push(strangeArr[ind - 1] + strangeArr[ind - 2])));
+
+// while (strangeArr.length < 10) {
+//   if (strangeArr.length < 2) {
+//     strangeArr.push(Math.floor(Math.random() * (25 - 5 + 1) + 5));
+//   } else {
+//     let prev = strangeArr[strangeArr.length - 1];
+//     let prevPrev = strangeArr[strangeArr.length - 2];
+//     strangeArr.push(prev + prevPrev);
+//   }
+// }
+console.log(strangeArr, "task 10");
 document.getElementById("log10").textContent = `${strangeArr}`;
