@@ -89,9 +89,7 @@ document.getElementById("log1").innerHTML = `${JSON.stringify(simtasSaskaitu, nu
 // Medinė dėžė 47 1025.74
 
 const visuSaskaituSuma = simtasSaskaitu.reduce((acc, curr) => curr.grandTotal + acc, 0).toFixed(2);
-const productsListing = products.map((name) => {
-  return { name, amount: 0, total: 0 };
-});
+const productsListing = products.map((name) => ({ name, amount: 0, total: 0 }));
 
 simtasSaskaitu.forEach((saskaita) => {
   saskaita.products.forEach((product) => {
