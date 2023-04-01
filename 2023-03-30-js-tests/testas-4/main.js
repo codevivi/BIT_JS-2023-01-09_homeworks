@@ -14,7 +14,6 @@ const australia = ["Kengūra", "Ančiasnapis", "Dingo", "Atsirado", "Strutis"];
 // skaičiai turi būti pergeneruojami iš naujo. Jeigu sugeneruoti
 // skaičiai yra vienodi, juos nudažyti raudonai.
 
-//17.45
 const h2Elements = document.querySelectorAll("h2");
 const button = document.querySelector("button");
 button.addEventListener("click", getAndDisplayNumbers);
