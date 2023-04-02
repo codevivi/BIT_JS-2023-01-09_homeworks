@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1px;
+  width: 100%;
+  min-height: 70vh;
+  margin-top: 2em;
+  background-color: black;
+}
+.half {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+  background-color: rgba(240, 255, 255, 0.432);
+}
+.ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  background-color: rgb(255, 217, 0);
+  cursor: pointer;
+}
+.btn-reset {
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: rgb(255, 217, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-reset:hover,
+.btn-reset:focus,
+.ball:hover,
+.ball:focus {
+  background-color: rgb(9, 175, 50);
+}
