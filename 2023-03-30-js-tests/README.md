@@ -12,4 +12,4 @@
 
 **#5** [Preview solution results 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-03-30-js-tests/testas-5/index.html)
 
-**#6** [Preview solution results 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-03-30-js-tests/testas-6/index.html)
+**#6** [CODAS](https://github.com/codevivi/balls-react-testas-6), [Preview solution results 🌐](https://codevivi.github.io/balls-react-testas-6/)
