@@ -22,13 +22,15 @@ function sukurtiNauja() {
     balls.push(new ColorBall(colorInput.value, numberInput.value));
     stageEl.innerHTML = "";
     balls.forEach((ball) => (stageEl.innerHTML += `<div class='ball' style="background-color: ${ball.color}">${ball.number}</div>`));
+    console.log(balls);
   }
 }
 
 function istrinti() {
   if (balls.length > 0) {
     let el = stageEl.querySelector("div:first-child");
-    balls.unshift();
+    balls.shift();
+    console.log(balls);
     stageEl.removeChild(el);
   }
 }
