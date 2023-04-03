@@ -77,3 +77,5 @@ Assignment listed in [there](https://github.com/codevivi/BIT_JS-2023-01-09_frida
 4. 2023-03-30 **Tarpiniai žinių patikrinimo testai** [result preview 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-03-30-js-tests/index.html)
 
 5. 2023-04-03 **Objektiniai uždaviniai 1** [result preview 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-04-03-objektiniai-uzdaviniai-1/index.html)
+
+6. 2023-04-03 **Objektiniai uždaviniai 2** [result preview 🌐](https://htmlpreview.github.io/?https://github.com/codevivi/BIT_JS-2023-01-09_homeworks/blob/master/2023-04-03-objektiniai-uzdaviniai-2/index.html)
