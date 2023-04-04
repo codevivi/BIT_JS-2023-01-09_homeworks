@@ -65,13 +65,81 @@ Puodelis.perpilti();
 
 // 3. Sukurti klasę Taskas, kuris turi savybę taskas rand 100-999. Sukurti klasę Taskai, kuris turi savybe taskai, kuri yra masyvas iš 10 Taskas objektų. Sukurkite išorinį kintamąjį (nepriklausantį jokiai klasei) daugTasku, kuris yra masyvas iš 10 elementų, o kiekvienas elementas yra Taskai objektas. Išrūšiuokite masyvą daugTasku, pagal taskų sumą nuo didžiausio iki mažiausio.
 
+class Taskas {
+  constructor() {
+    this.taskas = Math.floor(Math.random() * (999 - 100)) + 100;
+  }
+}
+class Taskai {
+  constructor() {
+    this.taskai = [...Array(10)].map((_) => new Taskas());
+  }
+}
+const daugTasku = [...Array(10)].map((_) => new Taskai());
 console.log("3. Taskas ***************************************************************************");
+console.log("neisrusiuotas daugTasku: ", daugTasku);
+daugTasku.sort((a, b) => b.taskai.reduce((acc, curr) => acc + curr.taskas, 0) - a.taskai.reduce((acc, curr) => acc + curr.taskas, 0));
+console.log("isrusiuotas pagal tasku suma daugTasku: ", daugTasku);
 console.log("Dar nepadarytas");
 // 4. Sukurti klasę Div. Sukūrus naują objektą iš šios klasės HTML’e turi atsirasti naujas <div> tagas su rand 1000 - 9999 skaičiumi viduje. Sukurti metodą spalva(color), kuris keistų to <div> tago spalvą. Taip pat statinį metodą visuSpalva(color), kuris keistų visų <div> tagų, sukurtų per klasę, spalvą.
 
+class Div {
+  static stage = document.querySelector(".stage");
+  static button = document.querySelector("button");
+  static elements = [];
+  constructor() {
+    this.div = document.createElement("div");
+    const text = document.createTextNode(this.rand(1000, 9999));
+    this.div.append(text);
+    this.constructor.stage.append(this.div);
+    this.constructor.elements.push(this);
+    this.div.addEventListener("click", () => {
+      this.spalva(this.randColor());
+    });
+    this.constructor.button.addEventListener("click", () => {
+      this.constructor.visuSpalva(this.randColor());
+    });
+  }
+
+  spalva(color) {
+    this.div.style.color = color;
+    this.div.style.borderColor = color;
+  }
+  static visuSpalva(color) {
+    this.elements.forEach((el) => el.spalva(color));
+  }
+  rand(min = 1000, max = 9999) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  randColor() {
+    return (
+      "#" +
+      Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padEnd(6, "0")
+    );
+  }
+}
+
+const divs = [...Array(200)].map((_) => new Div());
+
 console.log("4. Div ***************************************************************************");
-console.log("Dar nepadarytas");
+console.log("Results in index.html");
 // 5. Sukurti klasę Post. Kuriant objektą iš šios klasės, reikia įrašyti id savybę, pasirinktinai nuo 1 iki 100. Objektas turi turėti visas savybes gautas iš serverio adresu: https://jsonplaceholder.typicode.com/posts/1 (objektas su id: 1).
 
-console.log("4. Post ***************************************************************************");
-console.log("Dar nepadarytas");
+class Post {
+  constructor(id) {
+    if (typeof id !== "number" || Number.isNaN(id) || !Number.isInteger(id) || id < 1 || id > 100) {
+      throw new Error("Post id must be whole number between 1 and 100");
+    }
+    return (async () => {
+      const post = fetch(`https://jsonplaceholder.typicode.com/posts/${id}`).then((res) => res.json());
+      return post;
+    })();
+  }
+}
+console.log("5. Post ***************************************************************************");
+new Post(1).then((post) => console.log(post));
+new Post(48).then((post) => console.log(post));
